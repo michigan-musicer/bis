@@ -1,0 +1,59 @@
+div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+
+body {
+  color: #00274c;
+  font-family: "Nunito Sans","Montserrat","Merriweather",Calibri,"Trebuchet MS",sans-serif;
+  font-size: large;
+  text-align: center;
+}
+
+
+.main-container {
+  flex-direction: column;
+  width: 100vw;
+  background-color: #EDE8E1;
+}
+
+.main-title-div {
+  padding: 4em;
+}
+
+.main-title-text-div {
+  align-content: center;
+  align-self: center;
+}
+
+.main-navbar-div {
+  padding: 1em;
+}
+
+.main-summary-div {
+  padding: 4em;
+}
+
+.main-interviews-div {
+  padding: 4em;
+}
+      
+.main-statistics-div {
+  padding: 4em;
+}
+      
+.main-methodology-div {
+  padding: 4em;
+}
+
+.main-contact-div {
+  padding: 4em;
+}           
+
