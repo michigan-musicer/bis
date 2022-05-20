@@ -1,26 +1,11 @@
-div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 header {
   display: flex;
   justify-content: center;
   flex-direction: column
 }
 
-body {
-  color: #00274c;
-  font-family: "Nunito Sans","Montserrat","Merriweather",Calibri,"Trebuchet MS",sans-serif;
-  font-size: large;
-  text-align: center;
-}
-
-
 .main-container {
   flex-direction: column;
-  width: 100vw;
   background-color: #EDE8E1;
 }
 
@@ -33,27 +18,70 @@ body {
   align-self: center;
 }
 
-.main-navbar-div {
+.main-navbar-container-div {
+  flex-direction: row;
   padding: 1em;
+  background-color: #00274c;
+}
+
+.main-navbar-div {
+  position: sticky;
+  top: 0em;
+  padding: 0.5em;
+  background-color: #00274c;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 0em 0em 2em 2em;
+  height: 3em;
+  align-items: center;
+}
+
+.navbar-item-first {
+  flex: 1;
+  margin: 0;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-item {
+  flex: 1;
+  margin: 0;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 3px solid #FFFFFF;
+}
+
+.section-title {
+  padding-top: 4em;
 }
 
 .main-summary-div {
-  padding: 4em;
+  padding: 0em 4em 4em;
 }
 
 .main-interviews-div {
-  padding: 4em;
+  padding: 0em 4em 4em;
 }
       
-.main-statistics-div {
-  padding: 4em;
+.main-observations-div {
+  padding: 0em 4em 4em;
 }
       
 .main-methodology-div {
-  padding: 4em;
+  padding: 0em 4em 4em;
+}
+
+.main-disclaimer-div {
+  padding: 0em 4em 4em;
 }
 
 .main-contact-div {
-  padding: 4em;
+  padding: 0em 4em 4em;
 }           
 
