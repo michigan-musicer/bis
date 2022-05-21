@@ -36,6 +36,7 @@ header {
   border-radius: 0em 0em 2em 2em;
   height: 3em;
   align-items: center;
+  z-index: 2;
 }
 
 .navbar-item-first {
@@ -62,26 +63,61 @@ header {
 }
 
 .main-summary-div {
-  padding: 0em 4em 4em;
+  padding: 0em 4em 0em;
 }
 
 .main-interviews-div {
-  padding: 0em 4em 4em;
+  padding: 0em 4em 0em;
+}
+
+.interviews-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.interviews-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  width: calc(100% - 20em);
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  /* margin-bottom: -4em; */
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.interviews-preview-container {
+  position: sticky;
+  top: 8em;
+  width: 20em;
+  background-color: rgba(101,90,82, 0.4);
+  height: 30em;
+  margin-left: 1em;
+  margin-top: 2.5em;
+  z-index: 1;
+}
+
+.interviews-preview-text {
+  opacity: 100%;
+  
+  /* color: #FFFFFF; */
 }
       
 .main-observations-div {
-  padding: 0em 4em 4em;
+  padding: 0em 4em 0em;
 }
       
 .main-methodology-div {
-  padding: 0em 4em 4em;
+  padding: 0em 4em 0em;
 }
 
 .main-disclaimer-div {
-  padding: 0em 4em 4em;
+  padding: 0em 4em 0em;
 }
 
 .main-contact-div {
-  padding: 0em 4em 4em;
+  padding: 0em 4em 41em;
 }           
 

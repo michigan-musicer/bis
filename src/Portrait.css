@@ -1,0 +1,30 @@
+.portrait-container {
+  height: 10em;
+  width: 10em;
+  margin: 2em;
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid #00274C;
+
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(100%);
+  filter: brightness(100%);
+  transition-property: -webkit-filter, -moz-filter, -o-filter, -ms-filter, filter;
+  transition-duration: 0.2s;
+}
+
+.portrait-container:hover {
+  -webkit-filter: brightness(70%);
+  -moz-filter: brightness(70%);
+  -o-filter: brightness(70%);
+  -ms-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+.portrait-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
