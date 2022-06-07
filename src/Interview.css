@@ -1,0 +1,96 @@
+.profile-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background-color: #EDE8E1;
+  min-height: 100vh;
+}
+
+.profile-navbar-div {
+  position: sticky;
+  top: 0em;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3em;
+  align-items: center;
+  z-index: 2;
+}
+
+.profile-navbar-left {
+  width: 20%;
+  height: inherit;
+  background-color: #00274c;
+}
+
+.profile-navbar-right {
+  width: 50%;
+  height: inherit;
+  background-color: #00274c;
+  display: flex;
+  flex-direction: row;
+}
+
+/* this one looks dumb. Not sure how best to style it tho */
+.profile-navbar-left-text {
+  flex: 1;
+  margin: 0;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-navbar-right-item {
+  flex: 1;
+  margin: 0;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 3px solid #FFFFFF;
+}
+
+
+.profile-content-container {
+
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-picture {
+  margin: 2em;
+  width: 25em;
+  height: 25em;
+  border: 8px solid #00274c;
+  background-color: #00274c;
+}
+
+.profile-info {
+  /* adding a "transparent" border */
+  font-size: x-large;
+  padding: 0em 2em;
+  margin: calc(2em + 8px);
+  /* may need to set height to look nice on other viewports */
+  width: calc(100% - 33em);
+  background-color: white;
+}
+
+.profile-interview {
+  padding: 2em;
+  /* background-color: green; */
+}
+
+.profile-demographics {
+  padding: 2em;
+  /* background-color: blue; */
+}
+
+.profile-plant-info {
+  padding: 2em;
+  /* background-color: yellow; */
+}

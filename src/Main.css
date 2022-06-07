@@ -7,6 +7,7 @@ header {
 .main-container {
   flex-direction: column;
   background-color: #EDE8E1;
+  min-height: 100vh; /* x2 check this doesn't kill on edge cases*/
 }
 
 .main-title-div {
@@ -68,6 +69,19 @@ header {
 
 .main-interviews-div {
   padding: 0em 4em 0em;
+}
+
+.interviews-random-button {
+  width: 30em;
+  height: 3em;
+  margin: auto;
+  border-radius: 2em;
+  background-color: #00274c;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .interviews-container {
