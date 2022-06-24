@@ -1,5 +1,7 @@
 import React from 'react';
 import './Interview.css';
+import SubpageNavbar from './SubpageNavbar';
+
 
 class Interview extends React.Component {
   render() {
@@ -7,18 +9,7 @@ class Interview extends React.Component {
     // TODO: add links to other pages
     return (
     <div className="profile-container">
-      <div className="profile-navbar-div">
-        <div className="profile-navbar-left">
-          <h3 className="profile-navbar-left-text">Back to homepage</h3>
-        </div>
-        <div className="profile-navbar-right">
-          {/* this is not in the left container, but we do want the
-          same difference (no left border) */}
-          <h3 className="profile-navbar-left-text">Previous</h3>
-          <h3 className="profile-navbar-right-item">Read a random interview</h3>
-          <h3 className="profile-navbar-right-item">Next</h3>
-        </div>
-      </div>
+      <SubpageNavbar props={{title: "Test"}}/>
       <div className="profile-content-container">
         <div className="profile-header">
           <div className="profile-picture">
@@ -33,6 +24,9 @@ class Interview extends React.Component {
               <li><b>Major(s and minors):</b> {this.props.info_subjects}</li>
             </ul>
           </div>
+        </div>
+        <div className="profile-plant-info">
+          <it>{this.props.plant_info}</it>
         </div>
         <div className="profile-interview">
           {/* what seems to be the best way to do this is read from a csv
@@ -58,9 +52,6 @@ class Interview extends React.Component {
             <li><b>Gender identity:</b> {this.props.demographics.gender}</li>
             <li><b>Sexual identity:</b> {this.props.demographics.sexuality}</li> */}
           </ul>
-        </div>
-        <div className="profile-plant-info">
-          <it>{this.props.plant_info}</it>
         </div>
       </div>
     </div>

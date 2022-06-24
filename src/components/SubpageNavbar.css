@@ -1,0 +1,40 @@
+
+.subpage-navbar-div {
+  position: sticky;
+  top: 0em;
+  color: #FFFFFF;
+  background-color: #00274c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4em;
+  align-items: center;
+  z-index: 2;
+  
+  border-bottom: 2px solid black;
+}
+
+.subpage-navbar-left {
+  width: 13em;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0em 1em;
+  /* border-bottom-right-radius: 1em; */
+}
+
+.subpage-navbar-center {
+  height: inherit;
+  /* border-bottom-right-radius: 1em; */
+}
+
+.subpage-navbar-center-title {
+  margin: 0em;
+}
+
+.subpage-navbar-right {
+  width: 13em;
+  height: inherit;
+  padding: 0em 1em;
+}

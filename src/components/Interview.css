@@ -6,32 +6,6 @@
   min-height: 100vh;
 }
 
-.profile-navbar-div {
-  position: sticky;
-  top: 0em;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 3em;
-  align-items: center;
-  z-index: 2;
-}
-
-.profile-navbar-left {
-  width: 20%;
-  height: inherit;
-  background-color: #00274c;
-}
-
-.profile-navbar-right {
-  width: 50%;
-  height: inherit;
-  background-color: #00274c;
-  display: flex;
-  flex-direction: row;
-}
-
 /* this one looks dumb. Not sure how best to style it tho */
 .profile-navbar-left-text {
   flex: 1;

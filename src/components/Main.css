@@ -15,8 +15,24 @@ header {
 }
 
 .main-title-text-div {
-  align-content: center;
   align-self: center;
+  display: flex;
+}
+
+.main-title-text-primary-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title-text-primary {
+  font-size: 4em;
+  color: orangered; /* swap out for more palette appropriatel ater */
+
+}
+
+.main-title-text-secondary {
+  color: red;
 }
 
 .main-navbar-container-div {
@@ -38,6 +54,8 @@ header {
   height: 3em;
   align-items: center;
   z-index: 2;
+
+  margin-bottom: -4em;
 }
 
 .navbar-item-first {
@@ -93,41 +111,73 @@ header {
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
-  width: calc(100% - 20em);
   margin-block: 0;
   margin-inline: 0;
   padding-inline: 0;
   /* margin-bottom: -4em; */
   align-content: flex-start;
-  justify-content: space-between;
-}
-
-.interviews-preview-container {
-  position: sticky;
-  top: 8em;
-  width: 20em;
-  background-color: rgba(101,90,82, 0.4);
-  height: 30em;
-  margin-left: 1em;
-  margin-top: 2.5em;
-  z-index: 1;
-}
-
-.interviews-preview-text {
-  opacity: 100%;
-  
-  /* color: #FFFFFF; */
+  justify-content: center;
 }
       
 .main-observations-div {
   padding: 0em 4em 0em;
 }
+
+.main-observations-container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center
+}
+
+.main-observations-card {
+  height: 12em;
+  width: 12em;
+  background-color: #278BF0;
+  margin: 0em 4em;
+  padding: 1em;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  
+}
+
+.card-container-anchor {
+  text-decoration: none;
+}
+
+.main-methodology-container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.main-methodology-card {
+  height: 12em;
+  width: 12em;
+  background-color: #278BF0;
+  margin: 0em 2em;
+  padding: 1em;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  
+}
       
+.card-title {
+  min-height: 3em;
+}
+
 .main-methodology-div {
   padding: 0em 4em 0em;
 }
 
-.main-disclaimer-div {
+.main-acknowledgements-div {
   padding: 0em 4em 0em;
 }
 
