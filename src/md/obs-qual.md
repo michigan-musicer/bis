@@ -1,0 +1,1 @@
+*For brevity, "burnout and imposter syndrome" will be abbreviated to BIS on this page.*

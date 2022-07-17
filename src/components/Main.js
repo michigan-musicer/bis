@@ -4,12 +4,20 @@ import Portrait from './Portrait.js';
 
 import { Link } from "react-router-dom";
 
+import { useState, useEffect } from 'react';
 import test_pango from '../imgs/portraits/test_pango.png';
 import EmojiObjectsOutlinedIcon from '@mui/icons-material/EmojiObjectsOutlined';
 import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
 import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import TerminalOutlinedIcon from '@mui/icons-material/TerminalOutlined';
+
+import ReactMarkdown from 'react-markdown';
+import main_summary from '../md/main/main-summary.md';
+import main_observations from '../md/main/main-observations.md';
+import main_methodology from '../md/main/main-methodology.md';
+import main_acknowledgements from '../md/main/main-acknowledgements.md';
+import main_contact from '../md/main/main-contact.md';
 
 // to start on 6/19
 // routing
@@ -35,6 +43,95 @@ function Main() {
   // return (
   //   <div></div>
   // )
+
+  // fetch markdown content
+  const [summary, setSummary] = useState(null);
+  const [observations, setObservations] = useState(null);
+  const [methodology, setMethodology] = useState(null);
+  const [acknowledgements, setAcknowledgements] = useState(null);
+  const [contact, setContact] = useState(null);
+
+  useEffect(()=> {
+    fetch(main_summary)
+      .then((response) => response.text())
+      .then((main_summary_md_temp) => {
+        setSummary(main_summary_md_temp)
+      })
+    fetch(main_observations)
+      .then((response) => response.text())
+      .then((main_observations_md_temp) => {
+        setObservations(main_observations_md_temp)
+      })
+    fetch(main_methodology)
+      .then((response) => response.text())
+      .then((main_methodology_md_temp) => {
+        setMethodology(main_methodology_md_temp)
+      })
+    fetch(main_acknowledgements)
+      .then((response) => response.text())
+      .then((main_acknowledgements_md_temp) => {
+        setAcknowledgements(main_acknowledgements_md_temp)
+      })
+    fetch(main_contact)
+      .then((response) => response.text())
+      .then((main_contact_md_temp) => {
+        setContact(main_contact_md_temp) 
+      })
+    }
+  )
+
+  // let [content, setContent] = useState(
+  //   {
+  //     summary: null, 
+  //     observations: null,
+  //     methodology: null,
+  //     acknowledgements: null,
+  //     contact: null,
+  //   }
+  // );
+
+  // // better code would fetch all of these and then call setContent once
+  // let main_summary_md = null, main_observations_md = null, main_methodology_md = null, 
+  //   main_acknowledgements_md = null, main_contact_md = null; 
+
+  // useEffect(()=> {
+  //   fetch(main_summary)
+  //     .then((response) => response.text())
+  //     .then((main_summary_md_temp) => {
+  //       main_summary_md = main_summary_md_temp
+  //     })
+  //   fetch(main_observations)
+  //     .then((response) => response.text())
+  //     .then((main_observations_md_temp) => {
+  //       main_observations_md = main_observations_md_temp
+  //     })
+  //   fetch(main_methodology)
+  //     .then((response) => response.text())
+  //     .then((main_methodology_md_temp) => {
+  //       main_methodology_md = main_methodology_md_temp
+  //     })
+  //   fetch(main_acknowledgements)
+  //     .then((response) => response.text())
+  //     .then((main_acknowledgements_md_temp) => {
+  //       main_acknowledgements_md = main_acknowledgements_md_temp
+  //     })
+  //   fetch(main_contact)
+  //     .then((response) => response.text())
+  //     .then((main_contact_md_temp) => {
+  //       main_contact_md = main_contact_md_temp 
+  //     })
+
+  //   setContent(
+  //     {
+  //       summary: main_summary_md,
+  //       observations: main_observations_md,
+  //       methodology: main_methodology_md,
+  //       acknowledgements: main_acknowledgements_md,
+  //       contact: main_contact_md,
+  //     }
+  //   ); 
+  // }, [])
+
   let PortraitList = [];
   let numInterviews = 40;
   
@@ -70,17 +167,7 @@ function Main() {
       {/* </div> */}
       <div id="summary" className="main-summary-div">
         <h2 className="section-title">Summary</h2>
-        <p>This is a series of interviews collected from current undergraduates, graduate students, and alumni from the University of Michigan-Ann Arbor about their experiences with burnout and IS (imposter syndrome). This project was completed in the months of May and June of 2022.</p>
-        {/* you really really should not be putting figures in the summary. but I feel like I should.  */}
-        {/* <p>[]% of students said they experienced some degree of burnout at Michigan.</p>
-        {/* include horizontal percent bars... */}
-        {/* <p>[]% of students said they experienced some form of imposter syndrome at Michigan.</p> */}
-        <p>[comment on demographics]</p>
-
-        <p>Burnout and IS were prevalent among interviewees, but it's problematic put this into numbers. See "Observations" for fuller qualitative analysis and explanation of quantitative difficulties.</p> 
-        {/* <p><b>Be skeptical of these figures.</b> One, my sample size is small and isn't representative of the student population. Two, a student saying they experienced burnout or IS doesn't mean that a mental health expert would agree. In particular with burnout, there seems to be both short-term, temporary burnout and long-term, more serious burnout, which I've attempted to separate.</p> */}
-
-        <p>This project is not officially affiliated with or endorsed in any way by the University of Michigan. This project is not a formal research study and should not be cited as such. Please view all results in context of the methodology.</p>
+        <ReactMarkdown children={summary}/>
         {/* <h4>Changelog</h4>
         <ul>
           <li><b>Date:</b> change</li>
@@ -103,7 +190,7 @@ function Main() {
       </div>
       <div id="observations" className="main-observations-div">
         <h2 className="section-title">Observations</h2>
-        <em>All observations here are my own; these are provided to attempt to condense some of the findings from this project. I am not a mental health professional and I am not qualified to give medical advice; I encourage you to draw your own conclusions.</em>
+        <ReactMarkdown children={observations}/>
         
         <div className="main-observations-container">
           <Link to="/observations_qualitative" style={{textDecoration: "none"}}>
@@ -122,7 +209,7 @@ function Main() {
       </div>
       <div id="methodology" className="main-methodology-div">
         <h2 className="section-title">Methodology</h2>
-        <em>I'm providing this because I'd love to see this done elsewhere, and I want to suggest how others can improve on this. I've documented my approaches as well as my thoughts on improvements.</em>
+        <ReactMarkdown children={methodology}/>
         <div className="main-methodology-container">
           <Link to="/methodology_question_design" style={{textDecoration: "none"}}>
             <div className="main-methodology-card">
@@ -146,14 +233,12 @@ function Main() {
       </div>
       <div id="acknowledgements" className="main-acknowledgements-div">
         <h2 className="section-title">Acknowledgements</h2>
-        <p>Above all else, my sincerest thanks to everyone who shared their story with me. In hour-long conversations, you've taught me things I'd have taken years to learn on my own. I hope your words will help others too.</p>
-        <p>Thank you to the people in my life, in college and outside of college, who celebrated my highs and kept me sane in my lows. You know who you are.</p>
-        <p>Thank you to my therapist for helping me through my own experiences, as well as for offering informal guidance on the initial specs of this project.</p>
-        <p>Thank you to my colleagues at my current internship for being supportive and interested in your intern's dinky little side project. It helped a lot to know that working adults cared to hear about these things too.</p>
+        <ReactMarkdown children={acknowledgements}/>
       </div>
       <div id="contact" className="main-contact-div">
         <h2 className="section-title">Contact</h2>
-        <p>I am staying anonymous. If you have questions, please contact me at <a className="main-contact-email-link" href="mailto:thecourtmusician@gmail.com.">thecourtmusician@gmail.com</a>. Depending on what I want to do, I may deanonymize myself at a later date to claim this work.</p>
+        <ReactMarkdown children={contact}/>
+        
         {/* contact button here to copy-paste email */}
       </div>
     </div>
