@@ -11,6 +11,7 @@ import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
 import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import TerminalOutlinedIcon from '@mui/icons-material/TerminalOutlined';
+import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 
 import ReactMarkdown from 'react-markdown';
 import main_summary from '../md/main/main-summary.md';
@@ -220,13 +221,19 @@ function Main() {
           <Link to="/methodology_interview_procedures" style={{textDecoration: "none"}}>
           <div className="main-methodology-card">
             <p className="card-title">Interview Procedures</p>
-            <ArticleOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+            <MicOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
           </div>
           </Link>
           <Link to="/methodology_miscellanea" style={{textDecoration: "none"}}>
             <div className="main-methodology-card">
               <p className="card-title">Miscellaneous</p>
               <TerminalOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+            </div>
+          </Link>
+          <Link to="/methodology_citations" style={{textDecoration: "none"}}>
+            <div className="main-methodology-card">
+              <p className="card-title">Citations</p>
+              <ArticleOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
           </Link>
         </div>
@@ -238,9 +245,7 @@ function Main() {
       <div id="contact" className="main-contact-div">
         <h2 className="section-title">Contact</h2>
         <ReactMarkdown children={contact}/>
-        
-        {/* contact button here to copy-paste email */}
-      </div>
+        </div>
     </div>
     
   );

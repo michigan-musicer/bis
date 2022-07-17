@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import './MethMisc.css';
 import SubpageNavbar from './SubpageNavbar';
+import text_md from '../md/meth-misc.md';
 
 class MethMisc extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class MethMisc extends React.Component {
   }
 
   componentDidMount() {
-    fetch(test).then((response) => response.text()).then((text) => {
+    fetch(text_md).then((response) => response.text()).then((text) => {
       this.setState({ markdown: text })
     })
     console.log(this.state.markdown)

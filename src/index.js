@@ -9,6 +9,7 @@ import ObservationsQual from './components/ObservationsQual';
 import MethInterviewProcedures from './components/MethInterviewProcedures';
 import MethMisc from './components/MethMisc';
 import MethQuestionDesign from './components/MethQuestionDesign';
+import MethCitations from './components/MethCitations';
 
 import {
   BrowserRouter as Router,
@@ -27,6 +28,7 @@ root.render(
         <Route path="/methodology_interview_procedures" element={<MethInterviewProcedures/>}/>
         <Route path="/methodology_question_design" element={<MethQuestionDesign/>}/>
         <Route path="/methodology_miscellanea" element={<MethMisc/>}/>
+        <Route path="/methodology_citations" element={<MethCitations/>}/>
         <Route path="/" element={<Main/>}/>
       </Routes>
     </Router>

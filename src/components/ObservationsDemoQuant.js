@@ -3,7 +3,7 @@ import './ObservationsDemoQuant.css';
 import ReactMarkDown from 'react-markdown';
 
 import SubpageNavbar from './SubpageNavbar';
-import test from '../md/test.md';
+import text_md from '../md/obs-demo-quant.md';
 
 
 class ObservationsDemoQuant extends React.Component {
@@ -14,15 +14,13 @@ class ObservationsDemoQuant extends React.Component {
   }
 
   componentDidMount() {
-    fetch(test).then((response) => response.text()).then((text) => {
+    fetch(text_md).then((response) => response.text()).then((text) => {
       this.setState({ markdown: text })
     })
     console.log(this.state.markdown)
   }
   
   render() {
-    
-
     return (
       <div className="obs-demo-quant-container">
         <SubpageNavbar title="Demographic and quantitative observations"/>

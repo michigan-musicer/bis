@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import './MethQuestionDesign.css';
+import './MethCitations.css';
 import SubpageNavbar from './SubpageNavbar';
 import text_md from '../md/meth-citations.md';
 
-class MethQuestionDesign extends React.Component {
+class MethCitations extends React.Component {
   constructor(props) {
     super(props)
 
@@ -21,9 +21,9 @@ class MethQuestionDesign extends React.Component {
   render() {
     
     return (
-      <div className="meth-question-design-container">
-        <SubpageNavbar title="Question design"/>
-        <div className="meth-question-design-text">
+      <div className="meth-interview-procedures-container">
+        <SubpageNavbar title="Interview procedures"/>
+        <div className="meth-interview-procedures-text">
           <ReactMarkdown children={this.state.markdown}/>
         </div>
       </div>
@@ -31,4 +31,4 @@ class MethQuestionDesign extends React.Component {
   }
 }
   
-  export default MethQuestionDesign;
+  export default MethCitations;
