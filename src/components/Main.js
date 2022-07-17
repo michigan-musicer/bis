@@ -2,9 +2,8 @@ import './Main.css';
 import './Portrait.js';
 import Portrait from './Portrait.js';
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import Tooltip from '@mui/material/Tooltip';
 import test_pango from '../imgs/portraits/test_pango.png';
 import EmojiObjectsOutlinedIcon from '@mui/icons-material/EmojiObjectsOutlined';
 import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
@@ -36,17 +35,14 @@ function Main() {
   // return (
   //   <div></div>
   // )
-
   let PortraitList = [];
-  for (let i = 0; i < 40; ++i) {
+  let numInterviews = 40;
+  
+  let randomInterviewIndex = Math.floor(Math.random() * numInterviews);
+  for (let i = 0; i < numInterviews; ++i) {
     PortraitList.push(
       <li>
-        <Tooltip title="test">
-          {/* div is here to make tooltip work and does aboslutely nothing else */}
-          <div>
-            <Portrait img={test_pango}/>
-          </div>
-        </Tooltip>
+        <Portrait img={test_pango}/>
       </li>);
   }
 
@@ -92,9 +88,11 @@ function Main() {
       </div>
       <div id="interviews" className="main-interviews-div">
         <h2 className="section-title">Interviews</h2>
-        <h3 className="interviews-random-button">
-          Read a random interview
-        </h3>
+        <Link to="/interview" style={{textDecoration: "none"}}>
+          <h3 className="interviews-random-button">
+            Read a random interview
+          </h3>
+        </Link>
         <div className="interviews-container">
           <ul className="interviews-list">
             {/* we don't need to change number of  */}
@@ -106,43 +104,44 @@ function Main() {
       <div id="observations" className="main-observations-div">
         <h2 className="section-title">Observations</h2>
         <em>All observations here are my own; these are provided to attempt to condense some of the findings from this project. I am not a mental health professional and I am not qualified to give medical advice; I encourage you to draw your own conclusions.</em>
+        
         <div className="main-observations-container">
-          <a href="" className="card-container-anchor">
+          <Link to="/observations_qualitative" style={{textDecoration: "none"}}>
             <div className="main-observations-card">
               <p className="card-title">Qualitative Observations</p>
               <EmojiObjectsOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
-          </a>
-          <a href="" className="card-container-anchor">
+          </Link>
+          <Link to="/observations_demographic_quantitative" style={{textDecoration: "none"}}>
             <div className="main-observations-card">
               <p className="card-title">Demographics and Quantitative Observations</p>
               <PieChartOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       <div id="methodology" className="main-methodology-div">
         <h2 className="section-title">Methodology</h2>
         <em>I'm providing this because I'd love to see this done elsewhere, and I want to suggest how others can improve on this. I've documented my approaches as well as my thoughts on improvements.</em>
         <div className="main-methodology-container">
-          <a href="" className="card-container-anchor">
+          <Link to="/methodology_question_design" style={{textDecoration: "none"}}>
             <div className="main-methodology-card">
               <p className="card-title">Question Design</p>
               <QuestionMarkOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
-          </a>
-          <a href="" className="card-container-anchor">
+          </Link>
+          <Link to="/methodology_interview_procedures" style={{textDecoration: "none"}}>
           <div className="main-methodology-card">
             <p className="card-title">Interview Procedures</p>
             <ArticleOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
           </div>
-          </a>
-          <a href="" className="card-container-anchor">
+          </Link>
+          <Link to="/methodology_miscellanea" style={{textDecoration: "none"}}>
             <div className="main-methodology-card">
               <p className="card-title">Miscellaneous</p>
               <TerminalOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       <div id="acknowledgements" className="main-acknowledgements-div">
@@ -154,7 +153,7 @@ function Main() {
       </div>
       <div id="contact" className="main-contact-div">
         <h2 className="section-title">Contact</h2>
-        <p>I am staying anonymous. If you have questions, please contact me at thecourtmusician@gmail.com. Depending on what I want to do, I may deanonymize myself at a later date to claim this work.</p>
+        <p>I am staying anonymous. If you have questions, please contact me at <a className="main-contact-email-link" href="mailto:thecourtmusician@gmail.com.">thecourtmusician@gmail.com</a>. Depending on what I want to do, I may deanonymize myself at a later date to claim this work.</p>
         {/* contact button here to copy-paste email */}
       </div>
     </div>

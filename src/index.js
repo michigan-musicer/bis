@@ -23,10 +23,10 @@ root.render(
       <Routes>
         <Route path="/interview" element={<Interview/>}/>
         <Route path="/observations_qualitative" element={<ObservationsQual/>}/>
-        <Route path="/observations_quantitative" element={<ObservationsDemoQuant/>}/>
+        <Route path="/observations_demographic_quantitative" element={<ObservationsDemoQuant/>}/>
         <Route path="/methodology_interview_procedures" element={<MethInterviewProcedures/>}/>
         <Route path="/methodology_question_design" element={<MethQuestionDesign/>}/>
-        <Route path="/methodology_miscellaneous" element={<MethMisc/>}/>
+        <Route path="/methodology_miscellanea" element={<MethMisc/>}/>
         <Route path="/" element={<Main/>}/>
       </Routes>
     </Router>

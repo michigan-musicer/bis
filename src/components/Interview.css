@@ -68,3 +68,22 @@
   padding: 2em;
   /* background-color: yellow; */
 }
+
+
+.profile-other-interviews-random {
+  padding: 2em;
+  /* background-color: yellow; */
+}
+
+
+.profile-interviews-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  /* margin-bottom: -4em; */
+  align-content: flex-start;
+  justify-content: center;
+}
