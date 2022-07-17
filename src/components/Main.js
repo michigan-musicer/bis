@@ -20,32 +20,7 @@ import main_methodology from '../md/main/main-methodology.md';
 import main_acknowledgements from '../md/main/main-acknowledgements.md';
 import main_contact from '../md/main/main-contact.md';
 
-// to start on 6/19
-// routing
-// filling in with proper data
-
-// coding todos:
-  // observation pages
-  // methodology page (this should just be writing)
-  
-// non-technical todos:
-  // randomize everyone so that they are unidentifiable even when looking through source
-  // transcribe interviews (anticipate half hour each? and get through what you can)
-  // fill in the excel sheet for interviews and upload that as csv
-  // pick plants and pictures for plants and brief 1-2 sentence descriptions of plants
-    // pics should be mostly square!
-  // 
-
-
 function Main() {
-  // return (
-  //   <Interview />
-  // )
-  // return (
-  //   <div></div>
-  // )
-
-  // fetch markdown content
   const [summary, setSummary] = useState(null);
   const [observations, setObservations] = useState(null);
   const [methodology, setMethodology] = useState(null);
@@ -80,58 +55,6 @@ function Main() {
       })
     }
   )
-
-  // let [content, setContent] = useState(
-  //   {
-  //     summary: null, 
-  //     observations: null,
-  //     methodology: null,
-  //     acknowledgements: null,
-  //     contact: null,
-  //   }
-  // );
-
-  // // better code would fetch all of these and then call setContent once
-  // let main_summary_md = null, main_observations_md = null, main_methodology_md = null, 
-  //   main_acknowledgements_md = null, main_contact_md = null; 
-
-  // useEffect(()=> {
-  //   fetch(main_summary)
-  //     .then((response) => response.text())
-  //     .then((main_summary_md_temp) => {
-  //       main_summary_md = main_summary_md_temp
-  //     })
-  //   fetch(main_observations)
-  //     .then((response) => response.text())
-  //     .then((main_observations_md_temp) => {
-  //       main_observations_md = main_observations_md_temp
-  //     })
-  //   fetch(main_methodology)
-  //     .then((response) => response.text())
-  //     .then((main_methodology_md_temp) => {
-  //       main_methodology_md = main_methodology_md_temp
-  //     })
-  //   fetch(main_acknowledgements)
-  //     .then((response) => response.text())
-  //     .then((main_acknowledgements_md_temp) => {
-  //       main_acknowledgements_md = main_acknowledgements_md_temp
-  //     })
-  //   fetch(main_contact)
-  //     .then((response) => response.text())
-  //     .then((main_contact_md_temp) => {
-  //       main_contact_md = main_contact_md_temp 
-  //     })
-
-  //   setContent(
-  //     {
-  //       summary: main_summary_md,
-  //       observations: main_observations_md,
-  //       methodology: main_methodology_md,
-  //       acknowledgements: main_acknowledgements_md,
-  //       contact: main_contact_md,
-  //     }
-  //   ); 
-  // }, [])
 
   let PortraitList = [];
   let numInterviews = 40;
