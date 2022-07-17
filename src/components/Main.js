@@ -57,7 +57,7 @@ function Main() {
   )
 
   let PortraitList = [];
-  let numInterviews = 40;
+  let numInterviews = 41;
   
   let randomInterviewIndex = Math.floor(Math.random() * numInterviews);
   for (let i = 0; i < numInterviews; ++i) {
@@ -117,13 +117,13 @@ function Main() {
         <ReactMarkdown children={observations}/>
         
         <div className="main-observations-container">
-          <Link to="/observations_qualitative" style={{textDecoration: "none"}}>
+          <Link to="/observations_qualitative" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-observations-card">
               <p className="card-title">Qualitative Observations</p>
               <EmojiObjectsOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
           </Link>
-          <Link to="/observations_demographic_quantitative" style={{textDecoration: "none"}}>
+          <Link to="/observations_demographic_quantitative" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-observations-card">
               <p className="card-title">Demographics and Quantitative Observations</p>
               <PieChartOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
@@ -135,25 +135,25 @@ function Main() {
         <h2 className="section-title">Methodology</h2>
         <ReactMarkdown children={methodology}/>
         <div className="main-methodology-container">
-          <Link to="/methodology_question_design" style={{textDecoration: "none"}}>
+          <Link to="/methodology_question_design" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-methodology-card">
               <p className="card-title">Question Design</p>
               <QuestionMarkOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
           </Link>
-          <Link to="/methodology_interview_procedures" style={{textDecoration: "none"}}>
+          <Link to="/methodology_interview_procedures" style={{textDecoration: "none", color: "#FFFFFF"}}>
           <div className="main-methodology-card">
             <p className="card-title">Interview Procedures</p>
             <MicOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
           </div>
           </Link>
-          <Link to="/methodology_miscellanea" style={{textDecoration: "none"}}>
+          <Link to="/methodology_miscellanea" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-methodology-card">
               <p className="card-title">Miscellaneous</p>
               <TerminalOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
           </Link>
-          <Link to="/methodology_citations" style={{textDecoration: "none"}}>
+          <Link to="/methodology_citations" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-methodology-card">
               <p className="card-title">Citations</p>
               <ArticleOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>

@@ -8,7 +8,7 @@ class SubpageNavbar extends React.Component {
   render() {
     return (
       <div className="subpage-navbar-div">
-        <Link to="/" style={{textDecoration: "none"}}>
+        <Link to="/" style={{textDecoration: "none", color: "#FFFFFF"}}>
           <div className="subpage-navbar-left">
             <ArrowBackIcon/>
             <h3 className="subpage-navbar-left-text">Back to homepage</h3>
