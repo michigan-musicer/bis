@@ -13,7 +13,7 @@ class Portrait extends React.Component {
   render() {
     
     return (
-      <Tooltip>
+      <Tooltip title="placeholder">
         <Link to="/interview" style={{textDecoration: "none"}}>
           <div className="portrait-container">
             <img src={this.props.img} className="portrait-image"/>
