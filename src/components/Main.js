@@ -3,9 +3,8 @@ import './Portrait.js';
 import Portrait from './Portrait.js';
 
 import { Link } from "react-router-dom";
-
 import { useState, useEffect } from 'react';
-import test_pango from '../imgs/portraits/test_pango.png';
+
 import EmojiObjectsOutlinedIcon from '@mui/icons-material/EmojiObjectsOutlined';
 import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
 import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
@@ -19,6 +18,11 @@ import main_observations from '../md/main/main-observations.md';
 import main_methodology from '../md/main/main-methodology.md';
 import main_acknowledgements from '../md/main/main-acknowledgements.md';
 import main_contact from '../md/main/main-contact.md';
+
+import test_pango from '../imgs/portraits/test_pango.png';
+import Salmon from '../imgs/portraits/salmon.png';
+import Chicken from '../imgs/portraits/chicken.png';
+import Fox from '../imgs/portraits/fox.png'
 
 function Main() {
   const [summary, setSummary] = useState(null);
@@ -56,15 +60,43 @@ function Main() {
     }
   )
 
-  let PortraitList = [];
-  let numInterviews = 41;
+  let GraduateStudentsList = [], AlumniList= [], SeniorsList = [], JuniorsList = [];
+  let numInterviews = 40;
+  let numGraduateStudents = 11;
+  let numAlumni = 10;
+  let numSeniors = 14;
+  let numJuniors = 5;
   
   let randomInterviewIndex = Math.floor(Math.random() * numInterviews);
-  for (let i = 0; i < numInterviews; ++i) {
-    PortraitList.push(
+  // consider keeping a counter variable 
+
+  for (let i = 0; i < numGraduateStudents; ++i) {
+    GraduateStudentsList.push(
+      <li>
+        <Portrait img={Salmon}/>
+      </li>
+    );
+  }
+  for (let i = 0; i < numAlumni; ++i) {
+    AlumniList.push(
       <li>
         <Portrait img={test_pango}/>
-      </li>);
+      </li>
+    );
+  }
+  for (let i = 0; i < numSeniors; ++i) {
+    SeniorsList.push(
+      <li>
+        <Portrait img={Chicken}/>
+      </li>
+    );
+  }
+  for (let i = 0; i < numJuniors; ++i) {
+    JuniorsList.push(
+      <li>
+        <Portrait img={Fox}/>
+      </li>
+    );
   }
 
 
@@ -98,18 +130,39 @@ function Main() {
         </ul> */}
       </div>
       <div id="interviews" className="main-interviews-div">
-        <h2 className="section-title">Interviews</h2>
+        <h1 className="section-title" style={{}}>Interviews</h1>
         <Link to="/interview" style={{textDecoration: "none"}}>
           <h3 className="interviews-random-button">
             Read a random interview
           </h3>
         </Link>
         <div className="interviews-container">
-          <ul className="interviews-list">
-            {/* we don't need to change number of  */}
-            {/* add tooltip that just gives animal name */}
-            {PortraitList}
-          </ul>
+          <div className="interviews-subsection">
+            <h2 className="interviews-subsection-title">Graduate students</h2>
+              <ul className="interviews-list">
+                {GraduateStudentsList}
+              </ul>
+          </div>
+          <div className="interviews-subsection">
+          {/* order below grad students but specify recent alumni */}
+            <h2 className="interviews-subsection-title">Alumni</h2>
+              <ul className="interviews-list">
+                {AlumniList}
+              </ul>
+          </div>
+          <div className="interviews-subsection">
+            <h2 className="interviews-subsection-title">Undergraduate seniors, rising</h2>
+              <ul className="interviews-list">
+                {SeniorsList}
+              </ul>
+          </div>
+          <div className="interviews-subsection">
+            <h2 className="interviews-subsection-title">Undergraduate juniors and younger, rising</h2>
+              <ul className="interviews-list">
+                {JuniorsList}
+              </ul>
+          </div>
+
         </div>
       </div>
       <div id="observations" className="main-observations-div">

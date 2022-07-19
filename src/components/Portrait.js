@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom'
 import Tooltip from '@mui/material/Tooltip';
 
 // needs image to display in the portrait itself
-// needs info to display in preview port on hover only (current hover and not last hover)
-  // probably want to pass a prop that is set on hover 
-
 
 class Portrait extends React.Component {
   render() {

@@ -5,7 +5,7 @@ body {
   color: #00274c;
   font-family: "Nunito Sans","Montserrat","Merriweather",Calibri,"Trebuchet MS",sans-serif;
   font-size: large;
-  text-align: center;
+  text-align: left;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

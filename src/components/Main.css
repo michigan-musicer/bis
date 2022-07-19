@@ -33,6 +33,7 @@ header {
 
 .main-title-text-secondary {
   color: red;
+  text-align: center;
 }
 
 .main-navbar-container-div {
@@ -91,6 +92,8 @@ header {
 
 .section-title {
   padding-top: 4em;
+  margin-top: -2em;
+  text-align: center;
 }
 
 .main-summary-div {
@@ -128,7 +131,11 @@ header {
 
 .interviews-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.interviews-subsection-title {
+  text-align: center;
 }
 
 .interviews-list {
@@ -138,7 +145,6 @@ header {
   margin-block: 0;
   margin-inline: 0;
   padding-inline: 0;
-  /* margin-bottom: -4em; */
   align-content: flex-start;
   justify-content: center;
 }
@@ -197,6 +203,7 @@ header {
       
 .card-title {
   min-height: 3em;
+  text-align: center;
 }
 
 .main-methodology-div {
