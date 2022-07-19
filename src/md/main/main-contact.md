@@ -1,1 +1,0 @@
-I am staying anonymous. If you have questions, please contact me at [thecourtmusician@gmail.com](mailto:thecourtmusician@gmail.com). Depending on what I want to do, I may deanonymize myself at a later date to claim this work.

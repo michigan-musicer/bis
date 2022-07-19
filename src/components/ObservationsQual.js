@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import text_md from '../md/obs-qual.md';
 
 import './ObservationsQual.css';
 import SubpageNavbar from './SubpageNavbar';
@@ -13,7 +12,7 @@ class ObservationsQual extends React.Component {
   }
 
   componentDidMount() {
-    fetch(text_md).then((response) => response.text()).then((text) => {
+    fetch('/md/obs-qual.md').then((response) => response.text()).then((text) => {
       this.setState({ markdown: text })
     })
   }

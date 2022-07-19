@@ -2,7 +2,9 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import './MethMisc.css';
 import SubpageNavbar from './SubpageNavbar';
-import text_md from '../md/meth-misc.md';
+// import text_md from '../md/meth-misc.md';
+
+let text_md = '/md/meth-misc.md'
 
 class MethMisc extends React.Component {
   constructor(props) {

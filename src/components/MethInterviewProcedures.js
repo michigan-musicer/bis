@@ -2,8 +2,9 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import './MethInterviewProcedures.css';
 import SubpageNavbar from './SubpageNavbar';
-import text_md from '../md/meth-citations.md';
+// import text_md from '../md/meth-citations.md';
 
+let text_md = '/md/meth-citations.md'
 class MethInterviewProcedures extends React.Component {
   constructor(props) {
     super(props)

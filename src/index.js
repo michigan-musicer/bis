@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+
 import Main from './components/Main';
 import Interview from './components/Interview';
+import InterviewGuard from './components/InterviewGuard';
+// import InterviewBase from './components/InterviewBase';
 import ObservationsDemoQuant from './components/ObservationsDemoQuant';
 import ObservationsQual from './components/ObservationsQual';
 import MethInterviewProcedures from './components/MethInterviewProcedures';
@@ -17,12 +20,34 @@ import {
   Route
 } from "react-router-dom";
 
+// const interviews = [
+//   {
+//     "id": 0,
+//     "name": "John Smith",
+//     "speciality": "Wizard"
+//   },
+//   {
+//     "id": 1,
+//     "name": "Crag Hack",
+//     "speciality": "Viking"
+//   },
+//   {
+//     "id": 2,
+//     "name": "Silvio",
+//     "speciality": "Warrior"
+//   }
+// ];
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      {/* {interviews.map(interview => (<Link to={'/interview/' + interview.id} />)} */}
       <Routes>
-        <Route path="/interview" element={<Interview/>}/>
+        {/* <Route path="/interview" element={<InterviewBase/>} />   */}
+        {/* <Route path="/interview/:name" element={<Interview/>}/> */}
+        <Route path="/interview/:name" element={<InterviewGuard/>}/>
         <Route path="/observations_qualitative" element={<ObservationsQual/>}/>
         <Route path="/observations_demographic_quantitative" element={<ObservationsDemoQuant/>}/>
         <Route path="/methodology_interview_procedures" element={<MethInterviewProcedures/>}/>

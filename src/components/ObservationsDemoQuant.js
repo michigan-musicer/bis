@@ -3,9 +3,9 @@ import './ObservationsDemoQuant.css';
 import ReactMarkDown from 'react-markdown';
 
 import SubpageNavbar from './SubpageNavbar';
-import text_md from '../md/obs-demo-quant.md';
+// import text_md from '../md/obs-demo-quant.md';
 
-
+let text_md = '/md/obs-demo-quant.md'
 class ObservationsDemoQuant extends React.Component {
   constructor(props) {
     super(props)

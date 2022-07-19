@@ -13,16 +13,27 @@ import TerminalOutlinedIcon from '@mui/icons-material/TerminalOutlined';
 import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 
 import ReactMarkdown from 'react-markdown';
-import main_summary from '../md/main/main-summary.md';
-import main_observations from '../md/main/main-observations.md';
-import main_methodology from '../md/main/main-methodology.md';
-import main_acknowledgements from '../md/main/main-acknowledgements.md';
-import main_contact from '../md/main/main-contact.md';
+// import main_summary from '../md/main/main-summary.md';
+// import main_observations from '../md/main/main-observations.md';
+// import main_methodology from '../md/main/main-methodology.md';
+// import main_acknowledgements from '../md/main/main-acknowledgements.md';
+// import main_contact from '../md/main/main-contact.md';
 
-import test_pango from '../imgs/portraits/test_pango.png';
-import Salmon from '../imgs/portraits/salmon.png';
-import Chicken from '../imgs/portraits/chicken.png';
-import Fox from '../imgs/portraits/fox.png'
+let main_summary = '/md/main/main-summary.md';
+let main_observations = '/md/main/main-observations.md';
+let main_methodology = '/md/main/main-methodology.md';
+let main_acknowledgements = '/md/main/main-acknowledgements.md';
+let main_contact = '/md/main/main-contact.md';
+
+// import test_pango from '../imgs/portraits/test_pango.png';
+// import Salmon from '../imgs/portraits/salmon.png';
+// import Chicken from '../imgs/portraits/chicken.png';
+// import Fox from '../imgs/portraits/fox.png'
+
+let test_pango = '/imgs/portraits/test_pango.png';
+let Salmon = '/imgs/portraits/salmon.png';
+let Chicken = '/imgs/portraits/chicken.png';
+let Fox = '/imgs/portraits/fox.png'
 
 function Main() {
   const [summary, setSummary] = useState(null);

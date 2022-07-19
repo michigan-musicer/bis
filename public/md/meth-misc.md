@@ -1,0 +1,7 @@
+As mentioned in the [interview procedures methodology](/methodology_interview_procedures), interviews were processed through rev.ai. Rev.ai's automatic transcription is pretty nice and pretty cheap ($0.03 per minute, meaning I only spent about $50 to do all the preprocessing), but it does require you to go back and correct mistakes; additionally, I wanted to make additional edits for clarity. This manual editing process was easily the most time-consuming and frustrating part of the project; I estimate that it took 60-70 hours.
+
+This website was created in React. It honestly probably didn't need to be, and if you're interested in doing a similar project, I wouldn't consider lack of web dev skills a barrier to entry. I won't be open sourcing for a bit just because 1. I want to post any source code under my actual name, after I deanonymize; and 2. you can just Ctrl+C, go to the "Sources" tab, and fetch the source files if you really want (and 3. it is not particularly pretty code). I probably spent 20-30 hours on the website, which includes processing all the interviews into markdown files.
+
+I used Krita to create the burning block Ms on the front page. An animation would've been cool but also somewhat gratuitous. This only took a few hours (<5).
+
+Writeups for methodology were shorter than writeups for observations. The qualitative observations and demographic/quantitative observations took about 8 hours each, while the methodology pages each required less than 2 hours. This specific methodology page took about 10 minutes at most.
