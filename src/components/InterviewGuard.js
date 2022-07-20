@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import Interview from './Interview.js'
-import { getAllIntervieweeNames, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames, getTestName, getTestMap } from '../helpers/InterviewListHelpers.js'
+import { getAllIntervieweeNames, getAllIntervieweeMap, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames, getTestName, getTestMap } from '../helpers/InterviewListHelpers.js'
 
 import { useParams } from 'react-router-dom';
 
@@ -31,8 +31,8 @@ class InterviewGuard extends React.Component {
   render() {
     const nameInUrl = this.props.params.name;
 
-    const validNames = getTestName();
-    let validNamesMap = getTestMap();
+    const validNames = getAllIntervieweeNames();
+    let validNamesMap = getAllIntervieweeMap();
 
     // console.log(validNamesMap)
     // if (validNames.some(name => name === nameInUrl)) {

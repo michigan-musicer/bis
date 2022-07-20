@@ -19,15 +19,19 @@ function withParams(Component) {
 }
 
 function getDemographicInfo(demographic_info) {
-  return (
+  return demographic_info == null ? <em>Interviewee declined to publicly share demographic info.</em> : (
     <ul>
-      <li><b>GPA:</b> {demographic_info.gpa}</li>
-      <li><b>Residency:</b> {demographic_info.residency}</li>
+      <li><b>GPA:</b> {demographic_info.gpa == null ? <em>left blank</em> : demographic_info.gpa}</li>
+      <li><b>Residency:</b> {demographic_info.residency ? <em>left blank</em> : demographic_info.residency}</li>
       {/* bullet below should only show up if residency is "International"
       {/* for home country,
       you should do an if before the return statement and use {} to enclose
       your variable. see https://reactjs.org/docs/conditional-rendering.html */}
-      <li><b>Country of origin: </b> {demographic_info.country}</li>
+      {/* can I be lazy and put a 0 size div instead? */}
+      {demographic_info.residency == "International" 
+        ? <li><b>Country of origin:</b> {demographic_info.country == null ? <em>left blank</em> : demographic_info.country}</li>
+        : <div/>
+      }
       <li><b>Transfer student:</b> {demographic_info.transfer}</li>
       <li><b>Self-identified social class:</b> {demographic_info.social_class}</li>
       <li><b>First-gen:</b> {demographic_info.first_gen}</li>
@@ -37,6 +41,10 @@ function getDemographicInfo(demographic_info) {
       <li><b>Sexual identity:</b> {demographic_info.sexuality}</li>
     </ul>
   );
+}
+
+function generateRandomInterviews(name_to_avoid) {
+  return null;
 }
 
 class Interview extends React.Component {
@@ -72,13 +80,13 @@ class Interview extends React.Component {
     console.log(this.props.params.name);
 
     // should pick from the list of interviews and choose random ones that are NOT the current one
-    let PortraitList = [];
-    for (let i = 0; i < 3; ++i) {
-      PortraitList.push(
-        <li>
-          <Portrait img={test_pango}/>
-        </li>);
-    }
+    // let PortraitList = [];
+    // for (let i = 0; i < 3; ++i) {
+    //   PortraitList.push(
+    //     <li>
+    //       <Portrait img={test_pango}/>
+    //     </li>);
+    // }
 
     const demographicInfo = getDemographicInfo(this.props.props.demographic_info)
 
@@ -86,7 +94,7 @@ class Interview extends React.Component {
     // TODO: add links to other pages
     return (
     <div className="profile-container">
-      <SubpageNavbar title="Test"/>
+      <SubpageNavbar title={"Anonymous " + this.props.props.name}/>
       <div className="profile-content-container">
         <div className="profile-header">
           <div className="profile-picture">
@@ -96,8 +104,8 @@ class Interview extends React.Component {
             <h1>Anonymous {this.props.props.name}</h1>
             <ul>
               <li><b>Age:</b> {this.props.props.age}</li>
-              <li><b>Academic standing:</b> {this.props.props.school}</li>
               <li><b>School:</b> {this.props.props.school}</li>
+              <li><b>Academic standing:</b> {this.props.props.academic_standing}</li>
               <li><b>Program:</b> {this.props.props.program}</li>
             </ul>
             <div style={{fontSize: "large"}}>{this.props.props.animal_info}</div>
@@ -118,7 +126,7 @@ class Interview extends React.Component {
         <div className="profile-other-interviews-random">
             <h2>Read another interview</h2>
             <ul className="profile-interviews-list">
-              {PortraitList}
+              {/* {PortraitList} */}
             </ul>
         </div>
       </div>

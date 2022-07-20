@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 
 import EmojiObjectsOutlinedIcon from '@mui/icons-material/EmojiObjectsOutlined';
 import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
+import ReportProblemOutlinedIcon from '@mui/icons-material/ReportProblemOutlined';
 import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import TerminalOutlinedIcon from '@mui/icons-material/TerminalOutlined';
@@ -19,21 +20,25 @@ import ReactMarkdown from 'react-markdown';
 // import main_acknowledgements from '../md/main/main-acknowledgements.md';
 // import main_contact from '../md/main/main-contact.md';
 
-let main_summary = '/md/main/main-summary.md';
-let main_observations = '/md/main/main-observations.md';
-let main_methodology = '/md/main/main-methodology.md';
-let main_acknowledgements = '/md/main/main-acknowledgements.md';
-let main_contact = '/md/main/main-contact.md';
+import { getAllIntervieweeNames, getAllIntervieweeMap, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames, getTestName, getTestMap } from '../helpers/InterviewListHelpers.js'
 
-// import test_pango from '../imgs/portraits/test_pango.png';
-// import Salmon from '../imgs/portraits/salmon.png';
-// import Chicken from '../imgs/portraits/chicken.png';
-// import Fox from '../imgs/portraits/fox.png'
 
-let test_pango = '/imgs/portraits/test_pango.png';
-let Salmon = '/imgs/portraits/salmon.png';
-let Chicken = '/imgs/portraits/chicken.png';
-let Fox = '/imgs/portraits/fox.png'
+const main_summary = '/md/main/main-summary.md';
+const main_observations = '/md/main/main-observations.md';
+const main_methodology = '/md/main/main-methodology.md';
+const main_acknowledgements = '/md/main/main-acknowledgements.md';
+const main_contact = '/md/main/main-contact.md';
+
+const numInterviews = 41;
+const numGraduateStudents = 11;
+const numAlumni = 11;
+const numSeniors = 14;
+const numJuniors = 5;
+
+function getRandomInterviewName(listOfNames) {
+  const randomIndex = Math.floor(Math.random() * numInterviews);
+  return listOfNames[randomIndex]
+}
 
 function Main() {
   const [summary, setSummary] = useState(null);
@@ -72,44 +77,46 @@ function Main() {
   )
 
   let GraduateStudentsList = [], AlumniList= [], SeniorsList = [], JuniorsList = [];
-  let numInterviews = 41;
-  let numGraduateStudents = 11;
-  let numAlumni = 11;
-  let numSeniors = 14;
-  let numJuniors = 5;
-  
-  let randomInterviewIndex = Math.floor(Math.random() * numInterviews);
-  // consider keeping a counter variable 
+  const GraduateStudentsNamesList = getAllGradStudentNames(), 
+    AlumniNamesList = getAllAlumniNames(), 
+    SeniorsNamesList = getAllSeniorNames(), 
+    JuniorsNamesList = getAllJuniorNames();
+    
+  // let 
+  const IntervieweeMap = getAllIntervieweeMap();
 
-  for (let i = 0; i < numGraduateStudents; ++i) {
+  const randomName = getRandomInterviewName(getAllIntervieweeNames());
+  const randomInterviewProps = { name: randomName, props: IntervieweeMap[randomName]};
+
+
+  GraduateStudentsNamesList.forEach(name => {
     GraduateStudentsList.push(
       <li>
-        <Portrait img={Salmon}/>
+        <Portrait props={{ name: name, props: IntervieweeMap[name] }}/>
       </li>
     );
-  }
-  for (let i = 0; i < numAlumni; ++i) {
+  });
+  AlumniNamesList.forEach(name => {
     AlumniList.push(
       <li>
-        <Portrait img={test_pango}/>
+        <Portrait props={{ name: name, props: IntervieweeMap[name] }}/>
       </li>
     );
-  }
-  for (let i = 0; i < numSeniors; ++i) {
+  });
+  SeniorsNamesList.forEach(name => {
     SeniorsList.push(
       <li>
-        <Portrait img={Chicken}/>
+        <Portrait props={{ name: name, props: IntervieweeMap[name] }}/>
       </li>
     );
-  }
-  for (let i = 0; i < numJuniors; ++i) {
+  });
+  JuniorsNamesList.forEach(name => {
     JuniorsList.push(
       <li>
-        <Portrait img={Fox}/>
+        <Portrait props={{ name: name, props: IntervieweeMap[name] }}/>
       </li>
     );
-  }
-
+  });
 
   return (
     <div className="main-container">
@@ -117,7 +124,7 @@ function Main() {
         <header>
           <div className="main-title-text-div">
             <div className="main-title-text-primary-container"><h1 className="main-title-text-primary">Brilliant Little Fires</h1></div>
-            <img src={test_pango}/>
+            <img src={'/imgs/portraits/test_pango.png'}/>
           </div>
             <h2 className="main-title-text-secondary">An Interview Series on Burnout and Imposter Syndrome at the University of Michigan</h2>
         </header>
@@ -142,7 +149,9 @@ function Main() {
       </div>
       <div id="interviews" className="main-interviews-div">
         <h1 className="section-title" style={{}}>Interviews</h1>
-        <Link to="/interview" style={{textDecoration: "none"}}>
+        <Link to={"/interview/" + randomInterviewProps.name} props={randomInterviewProps} style={{textDecoration: "none"}}>
+          {/* this doesn't return a different interview every time if you stay on the same page */}
+          {/* too bad! */}
           <h3 className="interviews-random-button">
             Read a random interview
           </h3>
@@ -162,13 +171,13 @@ function Main() {
               </ul>
           </div>
           <div className="interviews-subsection">
-            <h2 className="interviews-subsection-title">Undergraduate seniors, rising</h2>
+            <h2 className="interviews-subsection-title">Undergraduate seniors</h2>
               <ul className="interviews-list">
                 {SeniorsList}
               </ul>
           </div>
           <div className="interviews-subsection">
-            <h2 className="interviews-subsection-title">Undergraduate juniors and younger, rising</h2>
+            <h2 className="interviews-subsection-title">Undergraduate juniors and below</h2>
               <ul className="interviews-list">
                 {JuniorsList}
               </ul>
@@ -183,14 +192,20 @@ function Main() {
         <div className="main-observations-container">
           <Link to="/observations_qualitative" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-observations-card">
-              <p className="card-title">Qualitative Observations</p>
+              <p className="card-title">11 Selected Observations</p>
               <EmojiObjectsOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
           </Link>
           <Link to="/observations_demographic_quantitative" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-observations-card">
-              <p className="card-title">Demographics and Quantitative Observations</p>
+              <p className="card-title">Demographics</p>
               <PieChartOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+            </div>
+          </Link>
+          <Link to="/observations_limitations" style={{textDecoration: "none", color: "#FFFFFF"}}>
+            <div className="main-observations-card">
+              <p className="card-title">Limitations</p>
+              <ReportProblemOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
             </div>
           </Link>
         </div>

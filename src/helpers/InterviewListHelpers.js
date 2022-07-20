@@ -59,6 +59,7 @@ function getAllIntervieweeNames() {
       'goldenret',
       'gorilla',
       'hamster',
+      'human',
       'ibis',
       'jaguar',
       'koala',
@@ -87,12 +88,510 @@ function getAllIntervieweeNames() {
     ];
 }
 
+function getAllIntervieweeMap() {
+  return {
+    'aardvark':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'aye-aye': 
+      {
+        name: "Aye-Aye",
+        age: 23,
+        school: "engineering",
+        academic_standing: "PhD precandidate",
+        program: "perfection",
+        path_md: '/md/interviews/aye-aye.md',
+        path_image: '/imgs/portraits/aye-aye.png',
+        animal_info: <div><em>It may not be obvious, but the aye-aye is a type of monkey, specifically a lemur. Besides being the largest nocturnal primate and severely confusing all the biologists who first discovered it, the aye-aye is distinctive for having an unusually long and thin middle finger (visible in the portrait photo on the left hand). The aye-aye will chew a hole in tree bark and then use this finger to scoop out invertebrates inside the tree bark, essentially giving it the job of a hairy flightless woodpecker. The only other animal to feed in a similar way is the striped possum, which has an unusually long and thin </em>fourth <em>finger instead.</em> 
+        <p></p>
+        <em>Lemurs are among the most endangered mammals in the world, and the aye-aye is classified as endangered on the IUCN Red List.</em></div>,
+        demographic_info: null
+      },
+    'baldeagle':
+      {
+        name: "Eagle",
+        age: 23,
+        school: "engineering",
+        academic_standing: "alumni",
+        program: "computer science and data science, math minor",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/baldeagle.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'bear':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'beaver':
+      {
+        name: "Beaver",
+        age: 24,
+        school: "engineering",
+        academic_standing: "master's",
+        program: "electrical and computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/beaver.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'chicken':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'cobra':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'dolphin':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'elephant':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'flamingo':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'fox':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'giraffe':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'goldenret':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'gorilla':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'hamster':
+      {
+        name: "Hamster",
+        age: 20,
+        school: "engineering",
+        academic_standing: "incoming master's; undergraduate alumni",
+        program: "biomedical engineering, unspecified minor",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/hamster.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'human':
+      {
+        name: "Human",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising senior",
+        program: "computer science, math minor",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/human.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'ibis':
+      {
+        name: "Ibis",
+        age: 28,
+        school: "engineering",
+        academic_standing: "PhD candidate",
+        program: "computer science",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/ibis.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'jaguar':
+      {
+        name: "Jaguar",
+        age: 20,
+        school: "business",
+        academic_standing: "rising senior",
+        program: "business administration, computer science minor",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/jaguar.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'koala':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'lion':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'macaque':
+      {
+        name: "Macaque",
+        age: 23,
+        school: "engineering",
+        academic_standing: "Master's; undergraduate alumni",
+        program: "Unspecified; computer science and engineering (unspecified minor)",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/macaque.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'mainecoon':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'moose':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'octopus':
+      {
+        name: "Octopus",
+        age: 22,
+        school: "engineering",
+        academic_standing: "alumni",
+        program: "computer science",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/octopus.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'oppossum':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'orca':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'osprey':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'otter':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'owl':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'panda':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'racoon':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'rfc':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'salmon':
+      {
+        name: "Salmon",
+        age: 21,
+        school: "business",
+        academic_standing: "rising senior",
+        program: "business administration, computer science minor",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/salmon.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'seal':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'shark':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'sheep':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'sloth':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'sugarglider':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'whitetiger':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'zebra':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+    'zebrafish':
+      {
+        name: "Bear",
+        age: 20,
+        school: "engineering",
+        academic_standing: "rising junior",
+        program: "computer engineering",
+        path_md: '/md/test.md',
+        path_image: '/imgs/portraits/bear.png',
+        animal_info: <em></em>,
+        demographic_info: null
+      },
+  }
+}
+
 // alums
-['aardvark', 'baldeagle', 'elephant', 'goldenret', 'koala', 'lion', 'mainecoon', 'octopus', 'owl', 'salmon', 'sloth']
+
 // juniors
-['bear', 'cobra', 'oppossum', 'panda', 'shark']
+
 // seniros
-['chicken', 'dolphin', 'flamingo', 'fox', 'gorilla', 'human', 'jaguar', 'moose', 'orca', 'otter', 'racoon', 'seal', 'zebrafish', 'zebra']
 function getAllGradStudentNames() {
   // return [
   //   'aye-aye',
@@ -113,15 +612,52 @@ function getAllGradStudentNames() {
 }
 
 function getAllAlumniNames() {
-  
+  // return [
+  //   'aardvark', 
+  //   'baldeagle', 
+  //   'elephant', 
+  //   'goldenret', 
+  //   'koala', 
+  //   'lion', 
+  //   'mainecoon', 
+  //   'octopus', 
+  //   'owl', 
+  //   'salmon', 
+  //   'sloth',
+  // ]
+  return ['salmon']
 }
 
 function getAllSeniorNames() {
+  // return [
+  //   'chicken', 
+  //   'dolphin', 
+  //   'flamingo', 
+  //   'fox', 
+  //   'gorilla', 
+  //   'human', 
+  //   'jaguar', 
+  //   'moose', 
+  //   'orca', 
+  //   'otter', 
+  //   'racoon', 
+  //   'seal', 
+  //   'zebrafish', 
+  //   'zebra',
+  // ]
+  return ['jaguar']
 
 }
 
 function getAllJuniorNames() {
-
+  // return [
+  //   'bear', 
+  //   'cobra', 
+  //   'oppossum', 
+  //   'panda', 
+  //   'shark',
+  // ]
+  return ['bear']
 }
 
 function getTestName() {
@@ -160,4 +696,7 @@ function getTestMap() {
   }
 }
 
-export { getAllIntervieweeNames, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames, getTestName, getTestMap };
+// a better global var solution here:
+// https://stackoverflow.com/questions/46476426/how-do-i-share-a-global-variable-between-multiple-files
+
+export { getAllIntervieweeNames, getAllIntervieweeMap, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames, getTestName, getTestMap };

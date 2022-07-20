@@ -7,13 +7,16 @@ import Tooltip from '@mui/material/Tooltip';
 // needs image to display in the portrait itself
 
 class Portrait extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
-    
     return (
-      <Tooltip title="placeholder">
-        <Link to="/interview" style={{textDecoration: "none"}}>
+      <Tooltip title={"Anonymous " + this.props.props.props.name}>
+        <Link to={"/interview/" + this.props.props.name} style={{textDecoration: "none"}}>
           <div className="portrait-container">
-            <img src={this.props.img} className="portrait-image"/>
+            <img src={this.props.props.props.path_image} className="portrait-image"/>
           </div>
         </Link>
       </Tooltip>
