@@ -72,9 +72,9 @@ function Main() {
   )
 
   let GraduateStudentsList = [], AlumniList= [], SeniorsList = [], JuniorsList = [];
-  let numInterviews = 40;
+  let numInterviews = 41;
   let numGraduateStudents = 11;
-  let numAlumni = 10;
+  let numAlumni = 11;
   let numSeniors = 14;
   let numJuniors = 5;
   

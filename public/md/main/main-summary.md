@@ -1,4 +1,4 @@
-This project is a series of interviews collected from 40 current undergraduates, graduate students, and alumni from the University of Michigan-Ann Arbor about their experiences with burnout and IS (imposter syndrome). This project was completed between the months of May and July of 2022.
+This project is a series of interviews collected from 41 current undergraduates, graduate students, and alumni from the University of Michigan-Ann Arbor about their experiences with burnout and IS (imposter syndrome). This project was completed between the months of May and July of 2022.
 
 The main purpose of *Brilliant Little Fires* is to provide personal stories about burnout and imposter syndrome, particularly for college students who may be struggling with these feelings. Burnout and imposter syndrome became more prominent topics in the news in light of the COVID-19 pandemic **CITE**, and psychology researchers are exploring both topics in the academic literature **CITE**. However, when I experienced these things, I had a hard time finding collections of personal stories that I could personally relate to. My hope is that this project can remedy that to some extent.
 
@@ -22,12 +22,12 @@ Mental healthcare providers in the Ann-Arbor area (developed by the Mental Healt
 
 #### US:
 
-Search for mental healthcare providers on [Psychology Today](https://www.psychologytoday.com/us/therapists),  
+Search for mental healthcare providers on [Psychology Today](https://www.psychologytoday.com/us/therapists).  
 
 Guides for searching for mental healthcare providers from the [American Psychological Association](https://www.apa.org/topics/psychotherapy/choose-therapist), [Mayo Clinic](https://www.mayoclinic.org/diseases-conditions/mental-illness/in-depth/mental-health-providers/art-20045530), [Healthline](https://www.healthline.com/health/how-to-find-a-therapist#provider-directory), and [WedMD](https://www.webmd.com/mental-health/features/how-to-find-therapist) 
 
-National Suicide Hotline: 
+National Suicide Hotline: 1-800-273-8255
 
-# note to self: ask ann abt a more complete list
+CRISIS Text Line: text HOME to 741-741
 
-stuff
+Trevor Project Hotline: 1-866-488-7386 or text START to 678-678

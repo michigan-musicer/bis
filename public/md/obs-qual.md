@@ -42,7 +42,17 @@ There are a substantial number of high-achieving students who did not report fee
 
 Something that came up for me in conversations outside of this interview is that for people who are working very hard, the mere thought of BIS might be terrifying. Maybe there is something that they value or *want* to value more than the things BIS may impact, and they are willing to deny BIS around them in order to achieve that thing. Michigan does value hard work in its students, and I wonder if this applies to them.
 
-## 5. Demographically "advantaged" students tend to have an easier time
+## number. "Stress casualties" are relatively few
+
+I'm borrowing "stress casualty" from this writeup on BioWare's development of Anthem written by Jason Schreier. In the context of that piece, "stress casualty"
+
+From this sample, there aren't many . . My suspicion is that this says more about my network than it says about UofM as a whole - but at the same time, the university has a low rate of dropouts and transfers, so maybe to some extent this can be extrapolated.
+
+My guess is that it's too early for many people to 
+
+Finally, there are a . At least one interviewee noted physical symptoms of stress (Aye-Aye), 
+
+## 5. Demographically "advantaged" students are the only ones who sometimes have an easier time
 
 A large portion of the interviewee sample is . While a majority of these students do *not* report having an easy time with BIS, they comprise the majority of the students who *do* report having an easy time with BIS. 
 

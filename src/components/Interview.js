@@ -18,6 +18,27 @@ function withParams(Component) {
   return props => <Component {...props} params={useParams()} />;
 }
 
+function getDemographicInfo(demographic_info) {
+  return (
+    <ul>
+      <li><b>GPA:</b> {demographic_info.gpa}</li>
+      <li><b>Residency:</b> {demographic_info.residency}</li>
+      {/* bullet below should only show up if residency is "International"
+      {/* for home country,
+      you should do an if before the return statement and use {} to enclose
+      your variable. see https://reactjs.org/docs/conditional-rendering.html */}
+      <li><b>Country of origin: </b> {demographic_info.country}</li>
+      <li><b>Transfer student:</b> {demographic_info.transfer}</li>
+      <li><b>Self-identified social class:</b> {demographic_info.social_class}</li>
+      <li><b>First-gen:</b> {demographic_info.first_gen}</li>
+      <li><b>Religious identification:</b> {demographic_info.religion}</li>
+      <li><b>Ethnicity:</b> {demographic_info.ethnicity}</li>
+      <li><b>Gender identity:</b> {demographic_info.gender}</li>
+      <li><b>Sexual identity:</b> {demographic_info.sexuality}</li>
+    </ul>
+  );
+}
+
 class Interview extends React.Component {
   constructor(props) {
     super(props)
@@ -44,19 +65,9 @@ class Interview extends React.Component {
   componentDidMount() {
     console.log(this.props.props.path_md);
     // let md = require(this.props.props.path_md)
-    fetch(this.props.props.path_md, {
-      // fetch(md, {
-      method: "GET",
-      // headers: myHeaders,
-      mode: "no-cors",
-      // body: formData
-    }).then((response) => response.text()).then((text => this.setState({ markdown : text })));
+    fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text })));
   }
 
-  componentDidUpdate() {
-    console.log(this.props.props.path_md);
-  }
-  
   render() {
     console.log(this.props.params.name);
 
@@ -69,6 +80,8 @@ class Interview extends React.Component {
         </li>);
     }
 
+    const demographicInfo = getDemographicInfo(this.props.props.demographic_info)
+
 
     // TODO: add links to other pages
     return (
@@ -77,17 +90,17 @@ class Interview extends React.Component {
       <div className="profile-content-container">
         <div className="profile-header">
           <div className="profile-picture">
-            <img src={this.props.image} className="profile-picture-image"/>
+            <img src={this.props.props.path_image} className="profile-picture-image"/>
           </div>
           <div className="profile-info">
-            <h1>Anonymous {this.props.params.name}</h1>
+            <h1>Anonymous {this.props.props.name}</h1>
             <ul>
               <li><b>Age:</b> {this.props.props.age}</li>
               <li><b>Academic standing:</b> {this.props.props.school}</li>
               <li><b>School:</b> {this.props.props.school}</li>
               <li><b>Program:</b> {this.props.props.program}</li>
-              <em>{this.props.animal_info}</em>
             </ul>
+            <div style={{fontSize: "large"}}>{this.props.props.animal_info}</div>
           </div>
         </div>
         {/* <div className="profile-plant-info">
@@ -100,23 +113,7 @@ class Interview extends React.Component {
         </div>
         <div className="profile-demographics">
           <h2>Demographic Information</h2>
-          <ul>
-            {/*             
-            <li><b>GPA:</b> {this.props.demographics.gpa}</li>
-            <li><b>Residency:</b> {this.props.demographics.residency}</li>
-            {/* bullet below should only show up if residency is "International" */}
-            {/* for home country,
-            you should do an if before the return statement and use {} to enclose
-            your variable. see https://reactjs.org/docs/conditional-rendering.html */}{/*}
-            <li><b>Country of origin: </b> {this.props.demographics.country}</li>
-            <li><b>Transfer student:</b> {this.props.demographics.transfer}</li>
-            <li><b>Self-identified social class:</b> {this.props.demographics.social_class}</li>
-            <li><b>First-gen:</b> {this.props.demographics.first_gen}</li>
-            <li><b>Religious identification:</b> {this.props.demographics.religion}</li>
-            <li><b>Ethnicity:</b> {this.props.demographics.ethnicity}</li>
-            <li><b>Gender identity:</b> {this.props.demographics.gender}</li>
-            <li><b>Sexual identity:</b> {this.props.demographics.sexuality}</li> */}
-          </ul>
+          {demographicInfo}
         </div>
         <div className="profile-other-interviews-random">
             <h2>Read another interview</h2>
