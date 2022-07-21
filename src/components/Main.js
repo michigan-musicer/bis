@@ -29,6 +29,8 @@ const main_methodology = '/md/main/main-methodology.md';
 const main_acknowledgements = '/md/main/main-acknowledgements.md';
 const main_contact = '/md/main/main-contact.md';
 
+const main_header_image = '/imgs/header.png';
+
 const numInterviews = 41;
 const numGraduateStudents = 11;
 const numAlumni = 11;
@@ -121,14 +123,21 @@ function Main() {
   return (
     <div className="main-container">
       <div className="main-title-div">
-        <header>
-          <div className="main-title-text-div">
-            <div className="main-title-text-primary-container"><h1 className="main-title-text-primary">Brilliant Little Fires</h1></div>
-            <img src={'/imgs/portraits/test_pango.png'}/>
+        {/* <> */}
+          <div className="main-title-quotes-container">
+            <div style={{width: "40em"}}/>
           </div>
-            <h2 className="main-title-text-secondary">An Interview Series on Burnout and Imposter Syndrome at the University of Michigan</h2>
-        </header>
+          <div className="main-title-text-div">
+            <div className="main-title-text-primary-container">
+              <h1 className="main-title-text-primary">Brilliant Little Fires</h1>
+              <h2 className="main-title-text-secondary">An Interview Series on Burnout and Imposter Syndrome at the University of Michigan</h2>
+            </div>
+          </div>
+          <div className="main-title-image-container">
+            <img className="main-title-image-primary" src={main_header_image}/>
+          </div>
       </div>
+      {/* </div> */}
       {/* <div className="main-navbar-container-div"> */}
         <div className="main-navbar-div">
           <h3 className="navbar-item-first"><a href="#summary">Summary</a></h3> 

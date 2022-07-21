@@ -74,7 +74,7 @@ Um, no. I mean, my grad school GPA is higher than my undergrad GPA, but I think 
 
 **Okay. Shifting gears a bit - when you set goals for yourself, how realistic are they and how consistently can you accomplish them?**  
 
-Oh, my goals. So <laugh>, my goals are very unrealistic. And usually I don't really accomplish them all the way. I just sort of get going into a useful direction, but I don't necessarily finish my goals. So for example, if it's a research project, then yeah, I'll complete it. If it's schoolwork I'll complete it. But if it's something like - you know, I have this book that I've wanted to read for a while and I keep planning time to read it, but I always underestimate how much effort it's going to take. So I typically just run out of time and don't get to them.  
+Oh, my goals. So, <laugh> my goals are very unrealistic. And usually I don't really accomplish them all the way. I just sort of get going into a useful direction, but I don't necessarily finish my goals. So for example, if it's a research project, then yeah, I'll complete it. If it's schoolwork I'll complete it. But if it's something like - you know, I have this book that I've wanted to read for a while and I keep planning time to read it, but I always underestimate how much effort it's going to take. So I typically just run out of time and don't get to them.  
 
 **In your education before UofM, were you ever a best or an especially strong student?**  
 

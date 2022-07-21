@@ -12,6 +12,8 @@ class Portrait extends React.Component {
   }
 
   render() {
+    console.log(this.props)
+
     return (
       <Tooltip title={"Anonymous " + this.props.props.props.name}>
         <Link to={"/interview/" + this.props.props.name} style={{textDecoration: "none"}}>

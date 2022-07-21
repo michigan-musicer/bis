@@ -42,13 +42,15 @@ There are a substantial number of high-achieving students who did not report fee
 
 Something that came up for me in conversations outside of this interview is that for people who are working very hard, the mere thought of BIS might be terrifying. Maybe there is something that they value or *want* to value more than the things BIS may impact, and they are willing to deny BIS around them in order to achieve that thing. Michigan does value hard work in its students, and I wonder if this applies to them.
 
+More generally, the . There are clearly interviewees who did not suffer from BIS as badly as others (compare e.g. .. to .., .. to ..), but those who suffered higher degrees of BIS often made statements along the lines of "all my friends are going through it" or "everyone at Michigan is burned out" or even "if you're not suffering from burnout, you're doing something wrong". Everyone's experience and feelings are valid, but these statements are contradicted by those individuals that did not suffer severely from BIS. My guess is that people who are deeply affected by these issues and people who are *not* deeply affected by these issues will tend to repel each other; like attracts like. In particular, BIS may be a thorny mental health issue for people who do not feel it, but it may also be a point of connection and commiseration among people who do feel it. To be clear, this is dependent on the *degree* of BIS; almost everyone in this sample space has experienced BIS themselves to *some* degree but not necessarily a *severe* degree. 
+
 ## number. "Stress casualties" are relatively few
 
-I'm borrowing "stress casualty" from this writeup on BioWare's development of Anthem written by Jason Schreier. In the context of that piece, "stress casualty"
+I'm borrowing "stress casualty" from this writeup on BioWare's development of Anthem, written by Jason Schreier. In the context of that piece, "stress casualty" refers to a BioWare employee who . I'd like to try and adapt this 
 
-From this sample, there aren't many . . My suspicion is that this says more about my network than it says about UofM as a whole - but at the same time, the university has a low rate of dropouts and transfers, so maybe to some extent this can be extrapolated.
+From this sample, there aren't many . . My suspicion is that this says more about my network than it says about UofM as a whole - but at the same time, the university has a low overall rate of dropouts and outward transfers. That may say something positive about the resiliency of 
 
-My guess is that it's too early for many people to 
+On the other hand, it may be too early in many people's careers to reach a stress casualty-level of BIS. 
 
 Finally, there are a . At least one interviewee noted physical symptoms of stress (Aye-Aye), 
 

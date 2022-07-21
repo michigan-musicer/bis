@@ -3,6 +3,8 @@ import ReactMarkdown from 'react-markdown';
 import './Interview.css';
 import SubpageNavbar from './SubpageNavbar';
 import Portrait from './Portrait';
+
+import { getAllIntervieweeNames, getAllIntervieweeMap } from '../helpers/InterviewListHelpers.js';
 // import test_pango from '/imgs/portraits/test_pango.png'
 
 // import text_md from '../md/test.md';
@@ -21,8 +23,9 @@ function withParams(Component) {
 function getDemographicInfo(demographic_info) {
   return demographic_info == null ? <em>Interviewee declined to publicly share demographic info.</em> : (
     <ul>
-      <li><b>GPA:</b> {demographic_info.gpa == null ? <em>left blank</em> : demographic_info.gpa}</li>
-      <li><b>Residency:</b> {demographic_info.residency ? <em>left blank</em> : demographic_info.residency}</li>
+      {/* make this all ternaries and empty divs */}
+      {demographic_info.gpa == null ? <div/> : <li><b>GPA:</b> {demographic_info.gpa}</li>}
+      {demographic_info.residency == null ? <div/> : <li><b>Residency:</b> {demographic_info.residency}</li>}
       {/* bullet below should only show up if residency is "International"
       {/* for home country,
       you should do an if before the return statement and use {} to enclose
@@ -32,19 +35,36 @@ function getDemographicInfo(demographic_info) {
         ? <li><b>Country of origin:</b> {demographic_info.country == null ? <em>left blank</em> : demographic_info.country}</li>
         : <div/>
       }
-      <li><b>Transfer student:</b> {demographic_info.transfer}</li>
-      <li><b>Self-identified social class:</b> {demographic_info.social_class}</li>
-      <li><b>First-gen:</b> {demographic_info.first_gen}</li>
-      <li><b>Religious identification:</b> {demographic_info.religion}</li>
-      <li><b>Ethnicity:</b> {demographic_info.ethnicity}</li>
-      <li><b>Gender identity:</b> {demographic_info.gender}</li>
-      <li><b>Sexual identity:</b> {demographic_info.sexuality}</li>
+      {demographic_info.transfer == null ? <div/> : <li><b>Transfer student:</b> {demographic_info.transfer}</li>}
+      {demographic_info.social_class == null ? <div/> : <li><b>Self-identified social class:</b> {demographic_info.social_class}</li>}
+      {demographic_info.first_gen == null ? <div/> : <li><b>First-gen:</b> {demographic_info.first_gen}</li>}
+      {demographic_info.religion == null ? <div/> : <li><b>Religious identification:</b> {demographic_info.religion}</li>}
+      {demographic_info.ethnicity == null ? <div/> : <li><b>Ethnicity:</b> {demographic_info.ethnicity}</li>}
+      {demographic_info.gender == null ? <div/> : <li><b>Gender identity:</b> {demographic_info.gender}</li>}
+      {demographic_info.sexuality == null ? <div/> : <li><b>Sexual identity:</b> {demographic_info.sexuality}</li>}
     </ul>
   );
 }
 
 function generateRandomInterviews(name_to_avoid) {
-  return null;
+  const intervieweeNames = getAllIntervieweeNames();
+  const intervieweeMap = getAllIntervieweeMap();
+
+  let namesToUse = [];
+  while (namesToUse.length < 3) {
+    let randomIndex = Math.floor(Math.random() * 41);
+    let newName = intervieweeNames[randomIndex];
+    if (newName != name_to_avoid && !namesToUse.includes(newName)) {
+      namesToUse.push(newName)
+    }
+  }
+
+  return (
+    <div className="profile-interviews-list">
+      <Portrait props={{ name: namesToUse[0], props: intervieweeMap[namesToUse[0]] }}/>
+      <Portrait props={{ name: namesToUse[1], props: intervieweeMap[namesToUse[1]] }}/>
+      <Portrait props={{ name: namesToUse[2], props: intervieweeMap[namesToUse[2]] }}/>
+    </div>)
 }
 
 class Interview extends React.Component {
@@ -71,10 +91,14 @@ class Interview extends React.Component {
   // }
 
   componentDidMount() {
-    console.log(this.props.props.path_md);
-    // let md = require(this.props.props.path_md)
     fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text })));
+    window.scrollTo(0, 0);
   }
+
+  // componentDidUpdate() {
+  //   fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text })));
+  //   window.scrollTo(0, 0);
+  // }
 
   render() {
     console.log(this.props.params.name);
@@ -89,7 +113,7 @@ class Interview extends React.Component {
     // }
 
     const demographicInfo = getDemographicInfo(this.props.props.demographic_info)
-
+    const PortraitList = generateRandomInterviews(this.props.name);
 
     // TODO: add links to other pages
     return (
@@ -126,7 +150,7 @@ class Interview extends React.Component {
         <div className="profile-other-interviews-random">
             <h2>Read another interview</h2>
             <ul className="profile-interviews-list">
-              {/* {PortraitList} */}
+              {PortraitList}
             </ul>
         </div>
       </div>
