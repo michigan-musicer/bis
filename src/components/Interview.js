@@ -72,6 +72,7 @@ class Interview extends React.Component {
     super(props)
 
     // console.log(this.props)
+    this.active = true;
     this.state = { markdown: null }
     // console.log(this.state)
   }
@@ -93,12 +94,20 @@ class Interview extends React.Component {
   componentDidMount() {
     fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text })));
     window.scrollTo(0, 0);
+    this.active = false;
   }
 
-  // componentDidUpdate() {
-  //   fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text })));
-  //   window.scrollTo(0, 0);
-  // }
+  componentDidUpdate() {
+    if (!this.active)
+    {
+      this.active = true;
+      fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text })));
+      window.scrollTo(0, 0);
+    }
+    else {
+      this.active = false;
+    }
+  }
 
   render() {
     console.log(this.props.params.name);
