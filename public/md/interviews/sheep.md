@@ -12,7 +12,7 @@ Four undergrad, three grad.
 
 **Okay, and what is the story of you deciding on your major in undergrad and continuing it into grad school?**  
 
-I was exposed to computer science really early on. My dad is a computer scientist, and it turned out to be a natural fit. Very much liked it and yeah, pretty straightforward for me to be honest. <laugh>  
+I was exposed to computer science really early on, and it turned out to be a natural fit. Very much liked it and yeah, pretty straightforward for me to be honest. <laugh>  
 
 **Alright. What is your most memorable academic story from your time at UofM?**  
 
