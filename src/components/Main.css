@@ -51,6 +51,11 @@ header {
   justify-content: space-around;
 }
 
+.main-title-social-media-twitter {
+  display: flex;
+  align-items: end;
+}
+
 .main-title-image-container {
   display: flex;
   justify-content: left;

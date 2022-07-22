@@ -124,7 +124,10 @@ function Main() {
               <h1 className="main-title-text-primary">Brilliant Little Fires</h1>
               <h2 className="main-title-text-secondary">An Interview Series on Burnout and Imposter Syndrome at the University of Michigan</h2>
               <div className="main-title-social-media">
-                <a href="https://twitter.com/ThCourtMusician"><TwitterIcon/></a>
+                <a className="main-title-social-media-twitter"href="https://twitter.com/ThCourtMusician">
+                  <TwitterIcon sx={{fontSize: 70}}/>
+                  <p>Twitter</p>
+                </a>
                 {/* <a href="fdsafdsa"><InstagramIcon/></a> */}
               </div>
             </div>
@@ -137,20 +140,45 @@ function Main() {
       {/* <div className="main-navbar-container-div"> */}
         <div className="main-navbar-div">
           <h3 className="navbar-item-first"><a href="#summary">Summary</a></h3> 
-          <h3 className="navbar-item"><a href="#interviews">Interviews</a></h3>
           <h3 className="navbar-item"><a href="#observations">Observations</a></h3>
+          <h3 className="navbar-item"><a href="#interviews">Interviews</a></h3>
           <h3 className="navbar-item"><a href="#methodology">Methodology</a></h3>
           <h3 className="navbar-item"><a href="#acknowledgements">Acknowledgements</a></h3>
           <h3 className="navbar-item"><a href="#contact">Contact</a></h3>
         </div>
       {/* </div> */}
       <div id="summary" className="main-summary-div">
-        <h2 className="section-title">Summary</h2>
+        <h1 className="section-title">Summary</h1>
         <ReactMarkdown children={summary}/>
         {/* <h4>Changelog</h4>
         <ul>
           <li><b>Date:</b> change</li>
         </ul> */}
+      </div>
+      <div id="observations" className="main-observations-div">
+        <h1 className="section-title">Observations</h1>
+        <ReactMarkdown children={observations}/>
+        <div className="main-observations-container">
+          <Link to="/observations_demographic" style={{textDecoration: "none", color: "#FFFFFF"}}>
+            <div className="main-observations-card">
+              <p className="card-title">Demographics</p>
+              {/* sx={{ color: 'white', fontSize: 150 }} */}
+              <PieChartOutlinedIcon className="card-icon"/>
+            </div>
+          </Link>
+          <Link to="/observations_qualitative" style={{textDecoration: "none", color: "#FFFFFF"}}>
+            <div className="main-observations-card">
+              <p className="card-title">11 Selected Observations</p>
+              <EmojiObjectsOutlinedIcon className="card-icon"/>
+            </div>
+          </Link>
+          <Link to="/observations_limitations" style={{textDecoration: "none", color: "#FFFFFF"}}>
+            <div className="main-observations-card">
+              <p className="card-title">Limitations</p>
+              <ReportProblemOutlinedIcon className="card-icon"/>
+            </div>
+          </Link>
+        </div>
       </div>
       <div id="interviews" className="main-interviews-div">
         <h1 className="section-title" style={{}}>Interviews</h1>
@@ -190,33 +218,8 @@ function Main() {
 
         </div>
       </div>
-      <div id="observations" className="main-observations-div">
-        <h2 className="section-title">Observations</h2>
-        <ReactMarkdown children={observations}/>
-        <div className="main-observations-container">
-          <Link to="/observations_demographic" style={{textDecoration: "none", color: "#FFFFFF"}}>
-            <div className="main-observations-card">
-              <p className="card-title">Demographics</p>
-              {/* sx={{ color: 'white', fontSize: 150 }} */}
-              <PieChartOutlinedIcon className="card-icon"/>
-            </div>
-          </Link>
-          <Link to="/observations_qualitative" style={{textDecoration: "none", color: "#FFFFFF"}}>
-            <div className="main-observations-card">
-              <p className="card-title">11 Selected Observations</p>
-              <EmojiObjectsOutlinedIcon className="card-icon"/>
-            </div>
-          </Link>
-          <Link to="/observations_limitations" style={{textDecoration: "none", color: "#FFFFFF"}}>
-            <div className="main-observations-card">
-              <p className="card-title">Limitations</p>
-              <ReportProblemOutlinedIcon className="card-icon"/>
-            </div>
-          </Link>
-        </div>
-      </div>
       <div id="methodology" className="main-methodology-div">
-        <h2 className="section-title">Methodology</h2>
+        <h1 className="section-title">Methodology</h1>
         <ReactMarkdown children={methodology}/>
         <div className="main-methodology-container">
           <Link to="/methodology_question_design" style={{textDecoration: "none", color: "#FFFFFF"}}>
@@ -246,7 +249,7 @@ function Main() {
         </div>
       </div>
       <div id="acknowledgements" className="main-acknowledgements-div">
-        <h2 className="section-title">Acknowledgements</h2>
+        <h1 className="section-title">Acknowledgements</h1>
         <ReactMarkdown children={acknowledgements}/>
       </div>
       <div id="contact" className="main-contact-div">

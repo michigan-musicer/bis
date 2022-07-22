@@ -3,11 +3,36 @@
 
 Here I will present 10 of what I think are the most interesting qualitative observations from these interviews. 
 
-For the most part, I am the only one coming up with these observations. (I discussed safe-to-discuss ideas with friends who knew about the project, as well as my therapist, but neither group participated in the writeup.) This means you should take these with a lot of salt; I probably make mistakes like citing some interviews more than others or citing all graduate students to prove one point instead of drawing from the whole sample space. Be skeptical.
+For the most part, I am the only one coming up with these observations. (I discussed safe-to-discuss ideas with friends who knew about the project, as well as my therapist, but neither group participated in the writeup.) This means you should take these with a lot of salt; I probably make mistakes like citing some interviews more than others, or citing only graduate students to prove one point instead of drawing from the whole sample space. Be skeptical.
 
 Additionally, I recommend briefly looking at the [demographic info](/observations_demographic) to get a sense of what this group of interviewees looks like. Keep in mind that **it consists disproportionately of straight Asian / Caucasian male students in engineering programs**.  
 
-## 1. BIS is near-universal, but comes in varying degrees
+# Table of contents
+
+
+#### 1. BIS is near-universal, but comes in varying degrees 
+
+#### 2. Amount of work done does not necessarily predicate burnout
+
+#### 3. GPA does not necessarily predicate imposter syndrome
+
+#### 4. BIS can be rooted in only academics or also in outside circumstances
+
+#### 5. Hints of a BIS "culture" at UofM?
+
+#### 6. "Stress casualties" are relatively few
+
+#### 7. Demographically "advantaged" students are the only ones who sometimes have an easier time
+
+#### 8. What relationship does egotism have with BIS?
+
+#### 9. High school experiences can directly influence BIS at UofM, though not always
+
+#### 10. COVID-19 had three distinct "tiers" of impact
+
+#### 11. It might end, it might not
+
+## 1. BIS is near-universal, but comes in varying degrees 
 
 *Although 41 interviewees were interviewed, current statistics are out of 39 because two interviewees have final reviews of their transcripts pending.*
 
@@ -183,7 +208,7 @@ It would be nice to think that BIS is a solvable problem that might never show u
 
 At the end of the day, BIS is a very individual problem, and this aspect, like all of its aspects, depends on who's experiencing it. My hope isn't to provide a cookie cutter solution to BIS that will work for everyone; it's to observe how young people are navigating these problems in the hopes that it'll help other young people chart their course. If *Brilliant Little Fires* has helped you in that regard, I'm satisfied.
 
-## Other comments:
+## [Other comments:](#n0)
 
 - It should be obvious, but I would note that BIS is not a phenomenon exclusive to UofM. Other university students I'm sure experience BIS, and most of the recent discussion around it has actually been in the workplace.
 - No one brought up their sexual orientation directly in an interview. Although the majority of interviewees who gave demographic info identified as heterosexual, some did idenitfy as an LGBTQ+ sexual orientation. There are a few reasons I think this might be the case:  
