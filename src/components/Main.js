@@ -1,9 +1,10 @@
 import './Main.css';
-import './Portrait.js';
+
 import Portrait from './Portrait.js';
 
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import EmojiObjectsOutlinedIcon from '@mui/icons-material/EmojiObjectsOutlined';
 import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
@@ -13,15 +14,7 @@ import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import TerminalOutlinedIcon from '@mui/icons-material/TerminalOutlined';
 import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 
-import ReactMarkdown from 'react-markdown';
-// import main_summary from '../md/main/main-summary.md';
-// import main_observations from '../md/main/main-observations.md';
-// import main_methodology from '../md/main/main-methodology.md';
-// import main_acknowledgements from '../md/main/main-acknowledgements.md';
-// import main_contact from '../md/main/main-contact.md';
-
-import { getAllIntervieweeNames, getAllIntervieweeMap, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames, getTestName, getTestMap } from '../helpers/InterviewListHelpers.js'
-
+import { getAllIntervieweeNames, getAllIntervieweeMap, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames } from '../helpers/InterviewListHelpers.js'
 
 const main_summary = '/md/main/main-summary.md';
 const main_observations = '/md/main/main-observations.md';
@@ -125,7 +118,7 @@ function Main() {
       <div className="main-title-div">
         {/* <> */}
           <div className="main-title-quotes-container">
-            <div style={{width: "40em"}}/>
+            <div style={{width: "435px"}}/>
           </div>
           <div className="main-title-text-div">
             <div className="main-title-text-primary-container">
@@ -197,24 +190,24 @@ function Main() {
       <div id="observations" className="main-observations-div">
         <h2 className="section-title">Observations</h2>
         <ReactMarkdown children={observations}/>
-        
         <div className="main-observations-container">
+          <Link to="/observations_demographic" style={{textDecoration: "none", color: "#FFFFFF"}}>
+            <div className="main-observations-card">
+              <p className="card-title">Demographics</p>
+              {/* sx={{ color: 'white', fontSize: 150 }} */}
+              <PieChartOutlinedIcon className="card-icon"/>
+            </div>
+          </Link>
           <Link to="/observations_qualitative" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-observations-card">
               <p className="card-title">11 Selected Observations</p>
-              <EmojiObjectsOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
-            </div>
-          </Link>
-          <Link to="/observations_demographic_quantitative" style={{textDecoration: "none", color: "#FFFFFF"}}>
-            <div className="main-observations-card">
-              <p className="card-title">Demographics</p>
-              <PieChartOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+              <EmojiObjectsOutlinedIcon className="card-icon"/>
             </div>
           </Link>
           <Link to="/observations_limitations" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-observations-card">
               <p className="card-title">Limitations</p>
-              <ReportProblemOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+              <ReportProblemOutlinedIcon className="card-icon"/>
             </div>
           </Link>
         </div>
@@ -226,25 +219,25 @@ function Main() {
           <Link to="/methodology_question_design" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-methodology-card">
               <p className="card-title">Question Design</p>
-              <QuestionMarkOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+              <QuestionMarkOutlinedIcon className="card-icon"/>
             </div>
           </Link>
           <Link to="/methodology_interview_procedures" style={{textDecoration: "none", color: "#FFFFFF"}}>
           <div className="main-methodology-card">
             <p className="card-title">Interview Procedures</p>
-            <MicOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+            <MicOutlinedIcon className="card-icon"/>
           </div>
           </Link>
           <Link to="/methodology_miscellanea" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-methodology-card">
               <p className="card-title">Miscellaneous</p>
-              <TerminalOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+              <TerminalOutlinedIcon className="card-icon"/>
             </div>
           </Link>
           <Link to="/methodology_citations" style={{textDecoration: "none", color: "#FFFFFF"}}>
             <div className="main-methodology-card">
               <p className="card-title">Citations</p>
-              <ArticleOutlinedIcon sx={{ color: 'white', fontSize: 150 }}/>
+              <ArticleOutlinedIcon className="card-icon"/>
             </div>
           </Link>
         </div>
@@ -256,9 +249,11 @@ function Main() {
       <div id="contact" className="main-contact-div">
         <h2 className="section-title">Contact</h2>
         <ReactMarkdown children={contact}/>
-        </div>
+      </div>
+      <div className="main-footer-div">
+        <img className="main-footer-img" src="imgs/logo.png"/>
+      </div>
     </div>
-    
   );
 }
 

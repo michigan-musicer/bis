@@ -1,12 +1,12 @@
 import React from 'react';
-import './ObservationsDemoQuant.css';
+import './ObservationsDemo.css';
 import ReactMarkDown from 'react-markdown';
 
 import SubpageNavbar from './SubpageNavbar';
 // import text_md from '../md/obs-demo-quant.md';
 
-let text_md = '/md/obs-demo-quant.md'
-class ObservationsDemoQuant extends React.Component {
+let text_md = '/md/obs-demo.md'
+class ObservationsDemo extends React.Component {
   constructor(props) {
     super(props)
 
@@ -32,4 +32,4 @@ class ObservationsDemoQuant extends React.Component {
   }
 }
   
-export default ObservationsDemoQuant;
+export default ObservationsDemo;

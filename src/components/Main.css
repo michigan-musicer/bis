@@ -11,7 +11,7 @@ header {
 }
 
 .main-title-div {
-  padding: 4em;
+  padding: 1em 4em;
   display: flex;
   flex-direction: row;
 }
@@ -21,7 +21,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 40em;
+  width: 60em;
 
 
   font-family: "Playfair Display", "Oswald", "Cambria"
@@ -47,11 +47,11 @@ header {
 .main-title-image-container {
   width: 40em;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .main-title-image-primary {
-  height: 25em;
+  height: 18em;
 }
 
 .main-navbar-container-div {
@@ -169,6 +169,8 @@ header {
       
 .main-observations-div {
   padding: 0em 4em 0em;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-observations-container {
@@ -178,8 +180,8 @@ header {
 }
 
 .main-observations-card {
-  height: 12em;
-  width: 12em;
+  height: 10em;
+  width: 10em;
   background-color: #278BF0;
   margin: 0em 4em;
   padding: 1em;
@@ -202,8 +204,8 @@ header {
 }
 
 .main-methodology-card {
-  height: 12em;
-  width: 12em;
+  height: 10em;
+  width: 10em;
   background-color: #278BF0;
   margin: 0em 2em;
   padding: 1em;
@@ -222,10 +224,18 @@ header {
 .card-title {
   min-height: 3em;
   text-align: center;
+  margin-bottom: 3em;
+}
+
+.card-icon {
+  color: white;
+  transform: scale(6);
 }
 
 .main-methodology-div {
   padding: 0em 4em 0em;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-acknowledgements-div {
@@ -233,7 +243,8 @@ header {
 }
 
 .main-contact-div {
-  padding: 0em 4em 41em;
+  /* padding: 0em 4em 41em; */
+  padding: 0em 4em 0em;
 }           
 
 .main-contact-email-link {
@@ -241,3 +252,87 @@ header {
   text-decoration: none;
 }
 
+.main-footer-div {
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer-img {
+  width: 30em;
+}
+
+
+@media (max-width: 1800px) {
+  .card-title {
+    min-height: 2em;
+    margin-bottom: 2em;
+  }
+
+  .card-icon {
+    transform: scale(4);
+  }
+
+  .main-observations-container {
+    width: 800px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  
+  .main-observations-card {
+    height: 8em;
+    width: 8em;
+    margin: 1em 2em;
+  }
+
+  .main-methodology-container {
+    width: 800px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  .main-methodology-card {
+    height: 8em;
+    width: 8em;
+    margin: 1em 2em;
+  }
+  
+  
+}
+
+@media (max-width: 799px) {
+  .card-title {
+    min-height: 2em;
+    margin-bottom: 2em;
+  }
+
+  .card-icon {
+    transform: scale(4);
+  }
+
+  .main-observations-container {
+    flex-direction: column;
+    width: 800px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  
+  .main-observations-card {
+    height: 8em;
+    width: 8em;
+    margin: 1em 2em;
+  }
+
+  .main-methodology-container {
+    width: 800px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  .main-methodology-card {
+    height: 8em;
+    width: 8em;
+    margin: 1em 2em;
+  }
+  
+  
+}

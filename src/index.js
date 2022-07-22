@@ -4,11 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import Main from './components/Main';
-import Interview from './components/Interview';
 import InterviewGuard from './components/InterviewGuard';
-// import InterviewBase from './components/InterviewBase';
-import ObservationsDemoQuant from './components/ObservationsDemoQuant';
+import ObservationsDemo from './components/ObservationsDemo';
 import ObservationsQual from './components/ObservationsQual';
+import ObservationsLimits from './components/ObservationsLimits';
 import MethInterviewProcedures from './components/MethInterviewProcedures';
 import MethMisc from './components/MethMisc';
 import MethQuestionDesign from './components/MethQuestionDesign';
@@ -49,7 +48,8 @@ root.render(
         {/* <Route path="/interview/:name" element={<Interview/>}/> */}
         <Route path="/interview/:name" element={<InterviewGuard/>}/>
         <Route path="/observations_qualitative" element={<ObservationsQual/>}/>
-        <Route path="/observations_demographic_quantitative" element={<ObservationsDemoQuant/>}/>
+        <Route path="/observations_demographic" element={<ObservationsDemo/>}/>
+        <Route path="/observations_limitations" element={<ObservationsLimits/>}/>
         <Route path="/methodology_interview_procedures" element={<MethInterviewProcedures/>}/>
         <Route path="/methodology_question_design" element={<MethQuestionDesign/>}/>
         <Route path="/methodology_miscellanea" element={<MethMisc/>}/>

@@ -4,8 +4,8 @@
 
 *Thank you to my therapist for helping me through my own experiences, as well as for offering informal guidance on this project.*
 
-*Thank you to my current work colleagues for being dedicated to a open, healthy work environment. It is validating to be somewhere where these things can be talked about openly.*
+*Thank you to my current professional colleagues for being dedicated to a open, healthy work environment. It is validating to work somewhere where these things can be talked about openly.*
 
-*All project setup, interviews, interview processing, website development, and writeups were done by me. The burning block M graphic in the header was created by me; all other graphics are either UI elements from Material UI or plots generated from the `matplotlib` library in Python.*
+*All project setup, interviews, interview processing, website development, and writeups were done by me. The burning block M graphic in the header was created by me; all other graphics are either UI elements from Material UI or plots generated from Google Sheets. I expect any fault in this project to be attributed to me and me only, and I expect any beneficial takeaways from this project to be credited to me and the relevant interviewee stories.*
 
-*For a list of cited research papers, please see [Citations](/methodology_citations)*.
+*For a list of cited research papers, image sources, and other references, please see [Citations](/methodology_citations)*.

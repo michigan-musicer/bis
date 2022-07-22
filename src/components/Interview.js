@@ -110,7 +110,7 @@ class Interview extends React.Component {
   }
 
   render() {
-    console.log(this.props.params.name);
+    // console.log(this.props.params.name);
 
     // should pick from the list of interviews and choose random ones that are NOT the current one
     // let PortraitList = [];

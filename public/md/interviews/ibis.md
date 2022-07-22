@@ -66,9 +66,9 @@ Um, so that was a very humbling thing, especially since with computer science, y
 
 I think the notion of average hours assumes a unimodal distribution, which is far from the truth for me. When you say an average, you're assuming that it's representative of some distribution where there's some variance on this side, some variance on that side, but telling you a mean when, say, you have clearly two modes, is not a very effective way to communicate that. Like let's say you have a bimodal distribution, right? Like you have something that, you know, looks like this, for example. Right? 
 
-[The interviewee drew and showed a distribution similar to the following:]
+[The interviewee drew and showed a distribution similar to the following on camera:]
 
-<FLAG_FOR_IMAGE_INSERTION>
+![a bimodal distribution](/imgs/bimodal.png)
 
 It's not really informative to give you an average, because the average is deceptive about the nature of things. So I think during normal times, the number of work hours that I work can be not that high. There are some weeks where I'm not really working at all. A lot of people go through stints where they just can't work, and some people try to push through it and stay there. It's unclear if that's for the better or for the worse. 
 

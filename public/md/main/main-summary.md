@@ -6,28 +6,30 @@ Because the main purpose of this project is to provide personal stories, I encou
 
 This project is not officially affiliated with or endorsed in any way by the University of Michigan. This project is not a formal research study and should not be cited as such. Please view all results in context of [the methodology, described here](#methodology). In particular, **be aware that 1. observations are given solely by one person, me; and 2. interviewees are not representative of UofM as a whole, but rather skew towards heterosexual Asian / Caucasian men in engineering** ([see demographic info here](/observations_demographic_quantitative)).
 
-In case you or someone you know is experiencing a mental health crisis, I've attached a list of UofM-specific resources plus resources general to the United States. You do not have to use these, but please know that they are available if you're in need.
+In case you or someone you know is experiencing a mental health crisis, here is a list of UofM-specific resources plus resources general to the United States. You do not have to use these, but please know that they are available if you're in need.
 
-#### UofM-specific:
+### UofM-specific:
 
-Counseling and Psychological Services (CAPS): (734) 764-8312 or [https://caps.umich.edu/](https://caps.umich.edu/)
+**Counseling and Psychological Services (CAPS)**: (734) 764-8312 or [https://caps.umich.edu/](https://caps.umich.edu/)
 
-University Health Services: (734) 764-8320 or [https://www.uhs.umich.edu/mentalhealthsvcs](https://www.uhs.umich.edu/mentalhealthsvcs)
+**University Health Services**: (734) 764-8320 or [https://www.uhs.umich.edu/mentalhealthsvcs](https://www.uhs.umich.edu/mentalhealthsvcs)
 
-Sexual Assault Prevention and Awareness Center: (734) 936-3333 or [https://sapac.umich.edu/](https://sapac.umich.edu/)
+**Sexual Assault Prevention and Awareness Center**: (734) 936-3333 or [https://sapac.umich.edu/](https://sapac.umich.edu/)
 
-Additional list of resources provided by CAPS: [https://caps.umich.edu/article/um-mental-health-resources](https://caps.umich.edu/article/um-mental-health-resources)
+**Additional list of resources provided by CAPS**: [https://caps.umich.edu/article/um-mental-health-resources](https://caps.umich.edu/article/um-mental-health-resources)
 
-Mental healthcare providers in the Ann-Arbor area (developed by the Mental Health Work Group at UofM): [https://umcpd.umich.edu/](https://umcpd.umich.edu/)
+**Mental healthcare providers in the Ann-Arbor area** (developed by the Mental Health Work Group at UofM): [https://umcpd.umich.edu/](https://umcpd.umich.edu/)
 
-#### US:
+### US:
 
-Search for mental healthcare providers on [Psychology Today](https://www.psychologytoday.com/us/therapists).  
+**Search for mental healthcare providers** on [Psychology Today](https://www.psychologytoday.com/us/therapists)  
 
-Guides for searching for mental healthcare providers from the [American Psychological Association](https://www.apa.org/topics/psychotherapy/choose-therapist), [Mayo Clinic](https://www.mayoclinic.org/diseases-conditions/mental-illness/in-depth/mental-health-providers/art-20045530), [Healthline](https://www.healthline.com/health/how-to-find-a-therapist#provider-directory), and [WedMD](https://www.webmd.com/mental-health/features/how-to-find-therapist) 
+**Guides for searching for mental healthcare providers** from the [American Psychological Association](https://www.apa.org/topics/psychotherapy/choose-therapist), [Mayo Clinic](https://www.mayoclinic.org/diseases-conditions/mental-illness/in-depth/mental-health-providers/art-20045530), [Healthline](https://www.healthline.com/health/how-to-find-a-therapist#provider-directory), and [WedMD](https://www.webmd.com/mental-health/features/how-to-find-therapist) 
 
-National Suicide Hotline: 1-800-273-8255
+**National Suicide Hotline**: 1-800-273-8255
 
-CRISIS Text Line: text HOME to 741-741
+**CRISIS Text Line**: text HOME to 741-741
 
-Trevor Project Hotline: 1-866-488-7386 or text START to 678-678
+**Trevor Project Hotline**: 1-866-488-7386 or text START to 678-678
+
+**National Sexual Assault Hotline**: 1-800-656-4673
