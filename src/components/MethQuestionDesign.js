@@ -16,7 +16,6 @@ class MethQuestionDesign extends React.Component {
     fetch(text_md).then((response) => response.text()).then((text) => {
       this.setState({ markdown: text })
     })
-    console.log(this.state.markdown)
   }
   
   render() {
