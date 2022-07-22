@@ -1,0 +1,3 @@
+*The zebrafish is a freshwater minnow native to South Asia, popular both in aquariums and in scientific research. Zebrafish were condemned to laboratory experimentation in the 70s and 80s by George Streisinger of the University of Oregon, mainly because of how useful they were genetically. Its genome was fully sequenced, it was a relatively simple animal whose behaviors could easily be observed and tested, and eggs grew rapidly and conveniently. If the zebrafish didn't have this going for them, then all I would've said is something about their stripes - so the zebrafish PR team, at least, is happy about this arrangement.*
+
+*Zebrafish are least concern on the IUCN Red List.*

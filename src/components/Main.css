@@ -299,6 +299,10 @@ header {
   
 }
 
+@media (max-width: 1399px) {
+/* navbar goes to stack that doesn't stick */
+}
+
 @media (max-width: 799px) {
   .card-title {
     min-height: 2em;

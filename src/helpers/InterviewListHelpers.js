@@ -100,7 +100,7 @@ function getAllIntervieweeMap() {
         program: "computer science, physics minor",
         path_md: '/md/interviews/aardvark.md',
         path_image: '/imgs/portraits/aardvark.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/aardvark.md',
         demographic_info: {
           gpa: 3.6,
           residency: residency.in_state,
@@ -134,7 +134,7 @@ function getAllIntervieweeMap() {
         program: "computer science and data science, math minor",
         path_md: '/md/interviews/baldeagle.md',
         path_image: '/imgs/portraits/baldeagle.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/baldeagle.md',
         demographic_info: null
       },
     'bear':
@@ -146,7 +146,7 @@ function getAllIntervieweeMap() {
         program: "computer engineering",
         path_md: '/md/interviews/bear.md',
         path_image: '/imgs/portraits/bear.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/bear.md',
         demographic_info: {
           gpa: 3.5,
           residency: residency.in_state,
@@ -168,7 +168,7 @@ function getAllIntervieweeMap() {
         program: "electrical and computer engineering",
         path_md: '/md/interviews/beaver.md',
         path_image: '/imgs/portraits/beaver.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/beaver.md',
         demographic_info: null
       },
     'chicken':
@@ -180,7 +180,7 @@ function getAllIntervieweeMap() {
         program: "Math and computer science",
         path_md: '/md/interviews/chicken.md',
         path_image: '/imgs/portraits/chicken.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/chicken.md',
         demographic_info: null
       },
     'cobra':
@@ -192,7 +192,7 @@ function getAllIntervieweeMap() {
         program: "pending",
         path_md: '/md/interviews/pending.md',
         path_image: '/imgs/portraits/cobra.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/pending.md',
         demographic_info: null
       },
     'dolphin':
@@ -204,7 +204,7 @@ function getAllIntervieweeMap() {
         program: "music performance",
         path_md: '/md/interviews/dolphin.md',
         path_image: '/imgs/portraits/dolphin.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/dolphin.md',
         demographic_info: {
           gpa: 3.9,
           residency: residency.out_of_state,
@@ -226,7 +226,7 @@ function getAllIntervieweeMap() {
         program: "applied data science; computer science, applied statistics minor",
         path_md: '/md/interviews/elephant.md',
         path_image: '/imgs/portraits/elephant.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/elephant.md',
         demographic_info: null
       },
     'flamingo':
@@ -238,7 +238,7 @@ function getAllIntervieweeMap() {
         program: "electrical engineering, computer science minor",
         path_md: '/md/interviews/flamingo.md',
         path_image: '/imgs/portraits/flamingo.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/flamingo.md',
         demographic_info: {
           gpa: 3.88,
           residency: residency.out_of_state,
@@ -260,7 +260,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/fox.md',
         path_image: '/imgs/portraits/fox.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/fox.md',
         demographic_info: {
           gpa: 3.2,
           residency: residency.in_state,
@@ -282,7 +282,7 @@ function getAllIntervieweeMap() {
         program: "unspecified; computer science; computer science",
         path_md: '/md/interviews/giraffe.md',
         path_image: '/imgs/portraits/giraffe.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/giraffe.md',
         demographic_info: null
       },
     'goldenret':
@@ -294,7 +294,7 @@ function getAllIntervieweeMap() {
         program: "communication and media; film, television, and visual media",
         path_md: '/md/interviews/goldenret.md',
         path_image: '/imgs/portraits/goldenret.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/goldenret.md',
         demographic_info: {
           gpa: 3.3,
           residency: residency.in_state,
@@ -316,7 +316,7 @@ function getAllIntervieweeMap() {
         program: "psychology",
         path_md: '/md/interviews/gorilla.md',
         path_image: '/imgs/portraits/gorilla.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/gorilla.md',
         demographic_info: {
           gpa: 3.7,
           residency: residency.in_state,
@@ -338,7 +338,7 @@ function getAllIntervieweeMap() {
         program: "unspecified; biomedical engineering, unspecified minor",
         path_md: '/md/interviews/hamster.md',
         path_image: '/imgs/portraits/hamster.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/hamster.md',
         demographic_info: {
           gpa: 3.8,
           residency: residency.in_state,
@@ -360,7 +360,7 @@ function getAllIntervieweeMap() {
         program: "computer science, math minor",
         path_md: '/md/interviews/human.md',
         path_image: '/imgs/portraits/human.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/human.md',
         demographic_info: {
           gpa: 3.8,
           residency: residency.in_state,
@@ -382,7 +382,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/ibis.md',
         path_image: '/imgs/portraits/ibis.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/ibis.md',
         demographic_info: null
       },
     'jaguar':
@@ -394,7 +394,7 @@ function getAllIntervieweeMap() {
         program: "business administration, computer science minor",
         path_md: '/md/interviews/jaguar.md',
         path_image: '/imgs/portraits/jaguar.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/jaguar.md',
         demographic_info: null
       },
     'koala':
@@ -406,7 +406,7 @@ function getAllIntervieweeMap() {
         program: "computer engineering; computer science",
         path_md: '/md/interviews/koala.md',
         path_image: '/imgs/portraits/koala.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/koala.md',
         demographic_info: null
       },
     'lion':
@@ -418,7 +418,7 @@ function getAllIntervieweeMap() {
         program: "electrical and computer engineering; computer engineering, physics minor",
         path_md: '/md/interviews/lion.md',
         path_image: '/imgs/portraits/lion.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/lion.md',
         demographic_info: null
       },
     'macaque':
@@ -430,7 +430,7 @@ function getAllIntervieweeMap() {
         program: "Unspecified; computer science and engineering (unspecified minor)",
         path_md: '/md/interviews/macaque.md',
         path_image: '/imgs/portraits/macaque.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/macaque.md',
         demographic_info: null
       },
     'mainecoon':
@@ -442,7 +442,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/mainecoon.md',
         path_image: '/imgs/portraits/mainecoon.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/mainecoon.md',
         demographic_info: {
           gpa: 3.3,
           residency: residency.in_state,
@@ -464,7 +464,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/moose.md',
         path_image: '/imgs/portraits/moose.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/moose.md',
         demographic_info: null
       },
     'octopus':
@@ -476,7 +476,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/octopus.md',
         path_image: '/imgs/portraits/octopus.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/octopus.md',
         demographic_info: {
           gpa: 3.8,
           residency: residency.out_of_state,
@@ -498,7 +498,7 @@ function getAllIntervieweeMap() {
         program: "computer science, unspecified minor",
         path_md: '/md/interviews/opossum.md',
         path_image: '/imgs/portraits/opossum.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/opossum.md',
         demographic_info: {
           gpa: 3.5,
           residency: residency.in_state,
@@ -520,7 +520,7 @@ function getAllIntervieweeMap() {
         program: "computer science, entrepreneurship minor",
         path_md: '/md/interviews/orca.md',
         path_image: '/imgs/portraits/orca.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/orca.md',
         demographic_info: {
           gpa: 3.6,
           residency: residency.out_of_state,
@@ -542,7 +542,7 @@ function getAllIntervieweeMap() {
         program: "pending",
         path_md: '/md/interviews/pending.md',
         path_image: '/imgs/portraits/osprey.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/pending.md',
         demographic_info: null
       },
     'otter':
@@ -554,7 +554,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/otter.md',
         path_image: '/imgs/portraits/otter.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/otter.md',
         demographic_info: {
           gpa: 3.4,
           residency: residency.in_state,
@@ -576,7 +576,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/owl.md',
         path_image: '/imgs/portraits/owl.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/owl.md',
         demographic_info: null
       },
     'panda':
@@ -588,7 +588,7 @@ function getAllIntervieweeMap() {
         program: "computer science, math minor",
         path_md: '/md/interviews/panda.md',
         path_image: '/imgs/portraits/panda.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/panda.md',
         demographic_info: {
           gpa: 3.6,
           residency: residency.out_of_state,
@@ -610,7 +610,7 @@ function getAllIntervieweeMap() {
         program: "Unspecified dual degree",
         path_md: '/md/interviews/racoon.md',
         path_image: '/imgs/portraits/racoon.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/racoon.md',
         demographic_info: null
       },
     'rfc':
@@ -622,7 +622,7 @@ function getAllIntervieweeMap() {
         program: "applied statistics; cognitive science and data science",
         path_md: '/md/interviews/rfc.md',
         path_image: '/imgs/portraits/rfc.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/rfc.md',
         demographic_info: null
       },
     'salmon':
@@ -634,7 +634,7 @@ function getAllIntervieweeMap() {
         program: "computer science; computer science, math minor",
         path_md: '/md/interviews/salmon.md',
         path_image: '/imgs/portraits/salmon.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/salmon.md',
         demographic_info: {
           gpa: 3.8,
           residency: residency.in_state,
@@ -656,7 +656,7 @@ function getAllIntervieweeMap() {
         program: "industrial and operations engineering",
         path_md: '/md/interviews/seal.md',
         path_image: '/imgs/portraits/seal.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/seal.md',
         demographic_info: {
           gpa: 3.5,
           residency: residency.in_state,
@@ -678,7 +678,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/shark.md',
         path_image: '/imgs/portraits/shark.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/shark.md',
         demographic_info: null
       },
     'sheep':
@@ -690,7 +690,7 @@ function getAllIntervieweeMap() {
         program: "computer science",
         path_md: '/md/interviews/sheep.md',
         path_image: '/imgs/portraits/sheep.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/sheep.md',
         demographic_info: null
       },
     'sloth':
@@ -702,8 +702,7 @@ function getAllIntervieweeMap() {
         program: "Math, computer science minor",
         path_md: '/md/interviews/sloth.md',
         path_image: '/imgs/portraits/sloth.png',
-        animal_info: <em></em>,
-        /* do not add identifying info here */
+        animal_info: '/md/animals/sloth.md',
         demographic_info: {
           gpa: 3.9,
           residency: residency.out_of_state,
@@ -725,7 +724,7 @@ function getAllIntervieweeMap() {
         program: "unspecified; computer science, math and philosophy minors",
         path_md: '/md/interviews/sugarglider.md',
         path_image: '/imgs/portraits/sugarglider.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/sugarglider.md',
         demographic_info: {
           gpa: 3.7,
           residency: residency.in_state,
@@ -747,7 +746,7 @@ function getAllIntervieweeMap() {
         program: "electrical and computer engineering",
         path_md: '/md/interviews/whitetiger.md',
         path_image: '/imgs/portraits/whitetiger.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/whitetiger.md',
         demographic_info: null
       },
     'zebra':
@@ -759,7 +758,7 @@ function getAllIntervieweeMap() {
         program: "unspecified, business administration and unspecified minors",
         path_md: '/md/interviews/zebra.md',
         path_image: '/imgs/portraits/zebra.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/zebra.md',
         demographic_info: {
           gpa: 3.9,
           residency: residency.in_state,
@@ -781,7 +780,7 @@ function getAllIntervieweeMap() {
         program: "unspecified and philosophy",
         path_md: '/md/interviews/zebrafish.md',
         path_image: '/imgs/portraits/zebrafish.png',
-        animal_info: <em></em>,
+        animal_info: '/md/animals/zebrafish.md',
         demographic_info: {
           gpa: 3.9,
           residency: residency.in_state,

@@ -1,0 +1,3 @@
+*The fennec fox is the smallest species of fox, residing in the North African desert. You may notice that it looks fairly different from most foxes; this is because its ears, fur, and kidneys (well you probably don't see the kidneys) have adapted to better situate it in its desert home. The fennec fox basically eats whatever is smaller in it that also decided to live in the desert: rodents, small reptiles, birds, and some fruits. The Algerian national football team (or to translate into American, soccer team) is nicknamed "Les Fennecs".* 
+
+*The fennec fox is listed as least concern on the IUCN Red List.*

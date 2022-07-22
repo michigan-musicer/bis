@@ -59,11 +59,12 @@ class Interview extends React.Component {
     super(props)
 
     this.active = true;
-    this.state = { markdown: null }
+    this.state = { markdown: null, animalInfo: null }
   }
 
   componentDidMount() {
-    fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text })));
+    fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text, animalInfo: this.state.animalInfo })));
+    fetch(this.props.props.animal_info).then((response) => response.text()).then((text => this.setState({ markdown : this.state.markdown, animalInfo : text })));
     window.scrollTo(0, 0);
     this.active = false;
   }
@@ -100,7 +101,7 @@ class Interview extends React.Component {
               <li><b>Academic standing:</b> {this.props.props.academic_standing}</li>
               <li><b>Program:</b> {this.props.props.program}</li>
             </ul>
-            <div style={{fontSize: "large"}}>{this.props.props.animal_info}</div>
+            <div style={{fontSize: "large"}}><ReactMarkdown children={this.state.animalInfo}/></div>
           </div>
         </div>
         <div className="profile-interview">

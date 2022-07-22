@@ -1,0 +1,3 @@
+*The African sacred ibis ranges over a significant portion of sub-Saharan Africa. It was known to ancient Greece and Rome, as well as African civilizations, but somehow Europeans after the fall of Rome forgot about its existence completely until the 1800s. Females lay one to five eggs once per year, which I am currently staring at on the Wikipedia page and really want to try scrambling. God I want scrambled eggs. The sacred part of the African ibis' name comes from its connection to the god Thoth in ancient Egyptian religion, making it particularly unfortunate that the bird is currently extinct in Egypt.*
+
+*The African sacred ibis is currently listed as least concern on the IUCN Red List.*

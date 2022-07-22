@@ -1,0 +1,3 @@
+*Lions are large cats. No that's what they're actually called. Lions are part of the genus* panthera*, which also includes tigers, jaguars, and leopards. Lions are apex predators that will sometimes scavenge for humans if there is nothing around that tastes better. Lions have been a significant animal symbol throughout human history, because humans are moronic wimps who automatically think anything that can kill them is really cool. For example, Henry the Lion was not a lion named Henry, but some German dude named Henry who wished he was as cool as a lion (and to be fair he* was *moderately cool).* 
+
+*The lion is listed as vulnerable on the IUCN Red List.*

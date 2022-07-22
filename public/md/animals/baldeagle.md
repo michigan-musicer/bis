@@ -1,0 +1,3 @@
+*A national symbol of the United States of America, the bald eagle is a large bird of prey that is not actually bald. It has a wingspan averaging around two meters while weighing the same as one or two human infants. Like many Americans, the bald eagle is an opportunistic predator that eats whatever food it can find, although it mimics island residents more in the sense that its diet is mostly fish. [Anonymous Salmon](/interview/salmon) should avoid this interviewee.*
+
+*The bald eagle nearly went extinct across North America in the 20th century, but it has recovered and is now least concern on the IUCN Red List.*

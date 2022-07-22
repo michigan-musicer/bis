@@ -1,0 +1,3 @@
+*The Hawaiian monk seal is not actually religious, and as far as scientists know, no seals have ever successfully formed a religion. It* is *Hawaiian, though - that is pretty much the only place it lives. The Hawaiian monk seal is an earless seal, which, suprisingly, means it does not have ears. The monk part of the name comes from the short hairs on its head, said to resemble those of a monk. It is not specified if they are supposed to look like an underwater monk or a monk in a normal out-of-water state, and this vague expectation is very confusing and distressing to fashion-conscious Hawaiian monk seals.*
+
+*The Hawaiian monk seal is listed as endangered on the IUCN Red List.*

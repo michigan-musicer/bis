@@ -1,0 +1,3 @@
+*The Atlantic salmon is the third-largest salmon species in the world, found in the northern Atlantic ocean. Salmon in general follow a spawning season where they hatch in streams and rivers, move out to sea, grow up, and then move back upstream to respawn. Unlike their Pacific brethren, however, Atlantic salmon do not self-destruct when they finish spawning. (You can look this up. It's honestly kind of gross.) What this means for the Atlantic salmon is that they can grow to extremely large sizes, although eventually most salmon are caught and eaten by something or other.*
+
+*The Atlantic salmon is listed as vulnerable on the IUCN Red List.*

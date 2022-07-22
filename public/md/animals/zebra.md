@@ -1,0 +1,3 @@
+*Grévy's zebra, also known as the imperial zebra, is the largest equid (which is literally just all the horse-like animals - no, not seahorses) in the wild. Unlike the other two extant zebra species, Grévy's zebra does not live in harems and is relatively antisocial. Grévy is not the guy who discovered this zebra: Émile Oustalet, who first described the species, decided to name it after the French president at the time, and I feel like it was just to confuse him. Imagine if you discovered a new species of capybara and you named it after Barack Obama, and imagine how Barack Obama would feel. That's what Émile must have been going for.*
+
+*Grévy's zebra is the most endangered species of zebra and is endangered on the IUCN Red List.*

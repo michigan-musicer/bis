@@ -1,0 +1,3 @@
+*Shown here is the Celebes crested macaque, named so because scientists think the word "mohawk" is too cool to be used by scientists. It is also named so because it resides on the northeastern tip of the island of Celebes, a Portuguese name for what Indonesians call Sulawesi. The Celebes crested macaque has entirely black fur except for some white hairs on the shoulder. A Celebes crested macaque is famous for being the monkey in the ["monkey selfie"](https://en.wikipedia.org/wiki/Monkey_selfie), where PETA tried to convince a wildlife photographer and a lot of people with law degrees that animals care about copyright and being paid licensing fees.*
+
+*The Celebes crested macaque is critically endangered on the IUCN Red List.*
