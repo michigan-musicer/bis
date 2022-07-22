@@ -23,7 +23,7 @@ class ObservationsDemo extends React.Component {
   render() {
     return (
       <div className="obs-demo-quant-container">
-        <SubpageNavbar title="Demographic and quantitative observations"/>
+        <SubpageNavbar title="Demographics"/>
         <div className="obs-demo-quant-text">
           <ReactMarkDown children={this.state.markdown}/>
         </div>

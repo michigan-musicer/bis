@@ -6,31 +6,6 @@
   min-height: 100vh;
 }
 
-/* this one looks dumb. Not sure how best to style it tho */
-.profile-navbar-left-text {
-  flex: 1;
-  margin: 0;
-  height: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profile-navbar-right-item {
-  flex: 1;
-  margin: 0;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 3px solid #FFFFFF;
-}
-
-
-.profile-content-container {
-
-}
-
 .profile-header {
   display: flex;
   flex-direction: row;
@@ -72,23 +47,19 @@
 
 .profile-interview {
   padding: 2em;
-  /* background-color: green; */
 }
 
 .profile-demographics {
   padding: 2em;
-  /* background-color: blue; */
 }
 
 .profile-plant-info {
   padding: 2em;
-  /* background-color: yellow; */
 }
 
 
 .profile-other-interviews-random {
   padding: 2em;
-  /* background-color: yellow; */
 }
 
 
@@ -99,7 +70,6 @@
   margin-block: 0;
   margin-inline: 0;
   padding-inline: 0;
-  /* margin-bottom: -4em; */
   align-content: flex-start;
   justify-content: center;
 }

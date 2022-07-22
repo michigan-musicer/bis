@@ -1,3 +1,3 @@
 *All observations my own. This is provided to attempt to condense some of the findings from this project.* 
 
-*I am not a mental health professional, nor am I specialized in psychology in any way or otherwise qualified to give medical advice. I encourage you to draw your own conclusions - in particular, if you are an expert in this area, do please reach out and give me your opinion if you're interested!*
+*I am not a mental health professional, nor am I specialized in psychology in any way or otherwise qualified to give medical advice. I encourage you to draw your own conclusions - in particular, if you are an expert in this area, please reach out and give me your opinion if you're interested!*

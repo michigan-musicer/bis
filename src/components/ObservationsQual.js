@@ -21,7 +21,7 @@ class ObservationsQual extends React.Component {
     
     return (
       <div className="obs-qual-container">
-        <SubpageNavbar title="Qualitative observations"/>
+        <SubpageNavbar title="11 selected observations"/>
         <div className="obs-qual-text">
           <ReactMarkdown children={this.state.markdown}/>
         </div>
