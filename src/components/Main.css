@@ -45,6 +45,12 @@ header {
   text-align: center;
 }
 
+.main-title-social-media {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
 .main-title-image-container {
   display: flex;
   justify-content: left;

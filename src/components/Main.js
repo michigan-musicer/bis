@@ -14,13 +14,16 @@ import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import TerminalOutlinedIcon from '@mui/icons-material/TerminalOutlined';
 import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 import { getAllIntervieweeNames, getAllIntervieweeMap, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames } from '../helpers/InterviewListHelpers.js'
 
-const main_summary = '/md/main/main-summary.md';
-const main_observations = '/md/main/main-observations.md';
-const main_methodology = '/md/main/main-methodology.md';
-const main_acknowledgements = '/md/main/main-acknowledgements.md';
-const main_contact = '/md/main/main-contact.md';
+const main_summary = process.env.PUBLIC_URL + '/md/main/main-summary.md';
+const main_observations = process.env.PUBLIC_URL + '/md/main/main-observations.md';
+const main_methodology = process.env.PUBLIC_URL + '/md/main/main-methodology.md';
+const main_acknowledgements = process.env.PUBLIC_URL + '/md/main/main-acknowledgements.md';
+const main_contact = process.env.PUBLIC_URL + '/md/main/main-contact.md';
 
 const main_header_image = '/imgs/header.png';
 
@@ -120,6 +123,10 @@ function Main() {
             <div className="main-title-text-primary-container">
               <h1 className="main-title-text-primary">Brilliant Little Fires</h1>
               <h2 className="main-title-text-secondary">An Interview Series on Burnout and Imposter Syndrome at the University of Michigan</h2>
+              <div className="main-title-social-media">
+                <a href="https://twitter.com/ThCourtMusician"><TwitterIcon/></a>
+                <a href="fdsafdsa"><InstagramIcon/></a>
+              </div>
             </div>
           </div>
           <div className="main-title-image-container">
