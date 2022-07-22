@@ -125,7 +125,7 @@ function Main() {
               <h2 className="main-title-text-secondary">An Interview Series on Burnout and Imposter Syndrome at the University of Michigan</h2>
               <div className="main-title-social-media">
                 <a href="https://twitter.com/ThCourtMusician"><TwitterIcon/></a>
-                <a href="fdsafdsa"><InstagramIcon/></a>
+                {/* <a href="fdsafdsa"><InstagramIcon/></a> */}
               </div>
             </div>
           </div>
