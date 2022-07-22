@@ -4,7 +4,7 @@ import './MethInterviewProcedures.css';
 import SubpageNavbar from './SubpageNavbar';
 // import text_md from '../md/meth-citations.md';
 
-let text_md = '/md/meth-citations.md'
+let text_md = '/md/meth-interview-proc.md'
 class MethInterviewProcedures extends React.Component {
   constructor(props) {
     super(props)

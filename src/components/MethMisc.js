@@ -24,7 +24,7 @@ class MethMisc extends React.Component {
     
     return (
       <div className="meth-misc-container">
-        <SubpageNavbar title="Methodology miscellanea"/>
+        <SubpageNavbar title="Methodological miscellanea"/>
         <div className="meth-misc-text">
           <ReactMarkdown children={this.state.markdown}/>
         </div>

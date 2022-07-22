@@ -4,7 +4,7 @@ import './MethQuestionDesign.css';
 import SubpageNavbar from './SubpageNavbar';
 // import text_md from '../md/meth-citations.md';
 
-let text_md = '/md/meth-citations.md'
+let text_md = '/md/meth-questions.md'
 class MethQuestionDesign extends React.Component {
   constructor(props) {
     super(props)

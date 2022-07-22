@@ -24,7 +24,7 @@ class MethCitations extends React.Component {
     
     return (
       <div className="meth-interview-procedures-container">
-        <SubpageNavbar title="Interview procedures"/>
+        <SubpageNavbar title="Citations"/>
         <div className="meth-interview-procedures-text">
           <ReactMarkdown children={this.state.markdown}/>
         </div>
