@@ -116,10 +116,6 @@ function Main() {
   return (
     <div className="main-container">
       <div className="main-title-div">
-        {/* <> */}
-          <div className="main-title-quotes-container">
-            <div style={{width: "435px"}}/>
-          </div>
           <div className="main-title-text-div">
             <div className="main-title-text-primary-container">
               <h1 className="main-title-text-primary">Brilliant Little Fires</h1>

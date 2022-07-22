@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import ReactMarkdown from 'react-markdown';
+import React from 'react';
 
 import Interview from './Interview.js'
-import { getAllIntervieweeNames, getAllIntervieweeMap, getAllAlumniNames, getAllGradStudentNames, getAllSeniorNames, getAllJuniorNames, getTestName, getTestMap } from '../helpers/InterviewListHelpers.js'
+import { getAllIntervieweeNames, getAllIntervieweeMap } from '../helpers/InterviewListHelpers.js'
 
 import { useParams } from 'react-router-dom';
 

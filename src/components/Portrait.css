@@ -28,3 +28,10 @@
   width: 100%;
   border-radius: 50%;
 }
+
+@media (max-width: 999px) {
+  .portrait-container {
+    height: 6em;
+    width: 6em;
+  }
+}

@@ -43,6 +43,20 @@
 }
 
 /* this should become a non-pinned list at some point */
-@media {
+@media (max-width: 1000px) {
+  .subpage-navbar-right {
+    width: 0em;
+  }
+}
 
+@media (max-width: 599px) {
+  .subpage-navbar-div {
+    flex-direction: column;
+  }
+  .subpage-navbar-center {
+    height: 0em;
+  }
+  .subpage-navbar-center-title {
+    font-size: 0em;
+  }
 }

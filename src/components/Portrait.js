@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom'
 import Tooltip from '@mui/material/Tooltip';
 
 class Portrait extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Tooltip title={"Anonymous " + this.props.props.props.name}>

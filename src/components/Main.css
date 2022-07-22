@@ -14,6 +14,7 @@ header {
   padding: 1em 4em;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .main-title-text-div {
@@ -45,7 +46,6 @@ header {
 }
 
 .main-title-image-container {
-  width: 40em;
   display: flex;
   justify-content: left;
 }
@@ -262,7 +262,7 @@ header {
 }
 
 
-@media (max-width: 1800px) {
+@media (max-width: 1699px) {
   .card-title {
     min-height: 2em;
     margin-bottom: 2em;
@@ -300,10 +300,35 @@ header {
 }
 
 @media (max-width: 1399px) {
-/* navbar goes to stack that doesn't stick */
+/* hide navbar in a really hacky css way... */
+  .main-navbar-div {
+    width: 0px;
+    height: 0px;
+    padding: 0em;
+  }
+  .navbar-item-first {
+    font-size: 0em;
+  }
+  .navbar-item {
+    font-size: 0em;
+  }
 }
 
 @media (max-width: 799px) {
+  .main-title-image-container {
+    align-items: center;
+  }
+
+  .main-title-text-primary {
+    font-size: 3em;
+    color: orangered; /* swap out for more palette appropriatel ater */
+  
+  }
+
+  .main-title-image-primary {
+    height: 9em;
+  }
+
   .card-title {
     min-height: 2em;
     margin-bottom: 2em;
@@ -315,9 +340,13 @@ header {
 
   .main-observations-container {
     flex-direction: column;
-    width: 800px;
     flex-wrap: wrap;
     align-self: center;
+    align-items: center;
+  }
+
+  .interviews-random-button {
+    width: 100%;
   }
   
   .main-observations-card {
@@ -327,9 +356,9 @@ header {
   }
 
   .main-methodology-container {
-    width: 800px;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-self: center;
+    align-items: center;
   }
 
   .main-methodology-card {
@@ -338,5 +367,7 @@ header {
     margin: 1em 2em;
   }
   
-  
+  .main-footer-img {
+    width: 100%;
+  }
 }
