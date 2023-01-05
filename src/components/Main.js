@@ -123,13 +123,13 @@ function Main() {
             <div className="main-title-text-primary-container">
               <h1 className="main-title-text-primary">Brilliant Little Fires</h1>
               <h2 className="main-title-text-secondary">An Interview Series on Burnout and Imposter Syndrome at the University of Michigan</h2>
-              <div className="main-title-social-media">
+              {/*<div className="main-title-social-media">
                 <a className="main-title-social-media-twitter"href="https://twitter.com/ThCourtMusician">
                   <TwitterIcon sx={{fontSize: 70}}/>
                   <p>Twitter</p>
                 </a>
-                {/* <a href="fdsafdsa"><InstagramIcon/></a> */}
-              </div>
+                <a href="fdsafdsa"><InstagramIcon/></a> 
+              </div> */}
             </div>
           </div>
           <div className="main-title-image-container">
