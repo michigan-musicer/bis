@@ -74,6 +74,7 @@ class Interview extends React.Component {
     {
       this.active = true;
       fetch(this.props.props.path_md).then((response) => response.text()).then((text => this.setState({ markdown : text })));
+      fetch(this.props.props.animal_info).then((response) => response.text()).then((text => this.setState({ animalInfo : text })));
       window.scrollTo(0, 0);
     }
     else {

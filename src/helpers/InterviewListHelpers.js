@@ -183,18 +183,18 @@ function getAllIntervieweeMap() {
         animal_info: '/md/animals/chicken.md',
         demographic_info: null
       },
-    'cobra':
-      {
-        name: "Cobra",
-        age: "pending",
-        school: "pending",
-        academic_standing: "pending",
-        program: "pending",
-        path_md: '/md/interviews/pending.md',
-        path_image: '/imgs/portraits/cobra.png',
-        animal_info: '/md/animals/pending.md',
-        demographic_info: null
-      },
+    // 'cobra':
+    //   {
+    //     name: "Cobra",
+    //     age: "pending",
+    //     school: "pending",
+    //     academic_standing: "pending",
+    //     program: "pending",
+    //     path_md: '/md/interviews/pending.md',
+    //     path_image: '/imgs/portraits/cobra.png',
+    //     animal_info: '/md/animals/pending.md',
+    //     demographic_info: null
+    //   },
     'dolphin':
       {
         name: "Dolphin",
@@ -533,18 +533,18 @@ function getAllIntervieweeMap() {
           sexuality: sexuality.heterosexual,
         },
       },
-    'osprey':
-      {
-        name: "Osprey",
-        age: "pending",
-        school: "pending",
-        academic_standing: "pending",
-        program: "pending",
-        path_md: '/md/interviews/pending.md',
-        path_image: '/imgs/portraits/osprey.png',
-        animal_info: '/md/animals/pending.md',
-        demographic_info: null
-      },
+    // 'osprey':
+    //   {
+    //     name: "Osprey",
+    //     age: "pending",
+    //     school: "pending",
+    //     academic_standing: "pending",
+    //     program: "pending",
+    //     path_md: '/md/interviews/pending.md',
+    //     path_image: '/imgs/portraits/osprey.png',
+    //     animal_info: '/md/animals/pending.md',
+    //     demographic_info: null
+    //   },
     'otter':
       {
         name: "Otter",
@@ -804,7 +804,7 @@ function getAllGradStudentNames() {
     'hamster',
     'ibis',
     'macaque',
-    'osprey',
+    // 'osprey',
     'rfc',
     'sheep',
     'sugarglider',
@@ -850,7 +850,7 @@ function getAllSeniorNames() {
 function getAllJuniorNames() {
   return [
     'bear', 
-    'cobra', 
+    // 'cobra', 
     'opossum', 
     'panda', 
     'shark',

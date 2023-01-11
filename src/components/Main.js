@@ -132,9 +132,9 @@ function Main() {
               </div> */}
             </div>
           </div>
-          <div className="main-title-image-container">
+          {/* <div className="main-title-image-container">
             <img className="main-title-image-primary" src={main_header_image}/>
-          </div>
+          </div> */}
       </div>
       {/* </div> */}
       {/* <div className="main-navbar-container-div"> */}
@@ -257,7 +257,7 @@ function Main() {
         <ReactMarkdown children={contact}/>
       </div>
       <div className="main-footer-div">
-        <img className="main-footer-img" src="imgs/logo.png"/>
+        {/* <img className="main-footer-img" src="imgs/logo.png"/> */}
       </div>
     </div>
   );
